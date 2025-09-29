@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog – Ridge Atwood - Data Science Portfolio</title>
+<title>Matplotlib vs.&nbsp;Seaborn: Same Plot, Different Styles – Ridge Atwood - Data Science Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -167,9 +167,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#matplotlib-vs.-seaborn-same-plot-different-styles" id="toc-matplotlib-vs.-seaborn-same-plot-different-styles" class="nav-link active" data-scroll-target="#matplotlib-vs.-seaborn-same-plot-different-styles">Matplotlib vs.&nbsp;Seaborn: Same Plot, Different Styles</a>
-  <ul class="collapse">
-  <li><a href="#purpose-of-this-article" id="toc-purpose-of-this-article" class="nav-link" data-scroll-target="#purpose-of-this-article">Purpose of this article</a></li>
+  <li><a href="#purpose-of-this-article" id="toc-purpose-of-this-article" class="nav-link active" data-scroll-target="#purpose-of-this-article">Purpose of this article</a></li>
   <li><a href="#characteristics" id="toc-characteristics" class="nav-link" data-scroll-target="#characteristics">Characteristics</a>
   <ul class="collapse">
   <li><a href="#matplotlib" id="toc-matplotlib" class="nav-link" data-scroll-target="#matplotlib">Matplotlib</a></li>
@@ -186,7 +184,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#detailed-seaborn-graph" id="toc-detailed-seaborn-graph" class="nav-link" data-scroll-target="#detailed-seaborn-graph">Detailed Seaborn graph</a></li>
   <li><a href="#which-one-is-better" id="toc-which-one-is-better" class="nav-link" data-scroll-target="#which-one-is-better">Which One Is Better?</a></li>
   </ul></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
@@ -195,7 +192,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Blog</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Matplotlib vs.&nbsp;Seaborn: Same Plot, Different Styles</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -212,8 +209,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="matplotlib-vs.-seaborn-same-plot-different-styles" class="level1">
-<h1>Matplotlib vs.&nbsp;Seaborn: Same Plot, Different Styles</h1>
 <section id="purpose-of-this-article" class="level2">
 <h2 class="anchored" data-anchor-id="purpose-of-this-article">Purpose of this article</h2>
 <p>The goal is to demonstrate the strengths that both the matplotlib and seaborn libraries have when plotting graphs. Only basic data will be plotted to illustrate the basic functions each library has and the special features for plotting each library has. I will be plotting the same graphs (with some minor differences) using both libraries. When working on a project you may just want a “quick and dirty” graph that just shows you the data. Othertimes, you may want to make a nice plot to present to others. We will inspect both of the libraries so you can learn the advantages of both and see which one is more time efficient and better for you and your situation. Since the main purpose is to compare these libraries, I will not go into major detail the syntax and every capability of each library. For more information on how to use the seaborn library, visit <a href="https://seaborn.pydata.org/tutorial/function_overview.html?utm_source=chatgpt.com">Seaborn Function Overview</a>. For more information on how to use the matplot library, visit <a href="https://matplotlib.org/stable/tutorials/index">Matplotlib Function Overview</a>.</p>
@@ -396,7 +391,6 @@ plt.show()</code></pre>
 
 <!-- -->
 
-</section>
 </section>
 </section>
 
@@ -853,153 +847,151 @@ plt.show()</code></pre>
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Blog"</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Matplotlib vs. Seaborn: Same Plot, Different Styles"</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co">    html:</span></span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">        code-fold: true</span></span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="an">jupyter:</span><span class="co"> python3</span></span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu"># Matplotlib vs. Seaborn: Same Plot, Different Styles</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## Purpose of this article</span></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>The goal is to demonstrate the strengths that both the matplotlib and seaborn libraries have</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>when plotting graphs. Only basic data will be plotted to illustrate the basic functions each</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>library has and the special features for plotting each library has. I will be plotting the same graphs (with some minor differences) using both libraries. When working on a project you may just want a "quick and dirty" graph that just shows you the data. Othertimes, you may want to make a nice plot to present to others. We will inspect both of the libraries so you can learn the advantages of both and see which one is more time efficient and better for you and your situation. Since the main purpose is to compare these libraries, I will not go into major detail the syntax and every capability of each library. </span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>For more information on how to use the seaborn library, visit <span class="co">[</span><span class="ot">Seaborn Function Overview</span><span class="co">](https://seaborn.pydata.org/tutorial/function_overview.html?utm_source=chatgpt.com)</span>. </span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>For more information on how to use the matplot library, visit <span class="co">[</span><span class="ot">Matplotlib Function Overview</span><span class="co">](https://matplotlib.org/stable/tutorials/index)</span>.</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="fu">## Characteristics</span></span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="fu">### Matplotlib</span></span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Foundational library**</span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Other graphing libraries are based off the matplotlib library. Even using other graphing libraries such as seaborn, you still need to import matplotlib and use some of its functions.</span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Flexible but verbose**</span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Its flexible in the many different features availbale, but it requires you to type a lot of code just to even label the graphs. It can't all be done in the same line, you have to specify specific functions each time which can be time-consuming and repetitive.</span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Default look is plain**</span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>The default look is very basic. If you want color and better backgrounds, you will have to specify it.</span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Great for fine-grained customization**</span>
-<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>You can change every little thing with the graph allowing you to get the exact graph you want.</span>
-<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a><span class="fu">### Seaborn</span></span>
-<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**High-level interface built on Matplotlib**</span>
-<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Seaborn is built on top of Matplotlib, so it can use Matplotlib functions when needed, but it automates many common tasks like styling, grouping, and legends.</span>
-<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Polished style defaults**</span>
-<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Unlike Matplotlib’s plain default look, Seaborn comes with clean, attractive themes (e.g., *darkgrid*, *whitegrid*, *ticks* using the *set_style* function) that make plots visually appealing with minimal code.</span>
-<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Statistical plotting built-in**</span>
-<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Seaborn understands DataFrames and categorical variables. Functions like lineplot, barplot, and boxplot automatically handle grouping (*hue*, *col*, *row*) and aggregation (mean, confidence intervals), which saves a lot of manual coding.</span>
-<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Great for quick exploratory plots**</span>
-<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>With just one line of code, you can generate complex plots that summarize trends, distributions, or relationships. Perfect for exploratory data analysis (EDA) and quick insights.</span>
-<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## Graphs</span></span>
-<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a><span class="fu">### Matplotlib graph with minimum code</span></span>
-<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a><span class="in">```{python3}</span></span>
-<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a><span class="co"># Load dataset from seaborn</span></span>
-<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">"tips"</span>)</span>
-<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>plt.plot(tips[<span class="st">"total_bill"</span>], tips[<span class="st">"tip"</span>], <span class="st">"o"</span>) <span class="co">#"o" is making each datapoint a dot</span></span>
-<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a><span class="al">![Basic matplotlib graph](images/basic_mat.png)</span></span>
-<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a><span class="fu">### Seaborn graph with minimum code</span></span>
-<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a><span class="in">```{python3}</span></span>
-<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">"tips"</span>)</span>
-<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a>sns.lineplot(x<span class="op">=</span><span class="st">"total_bill"</span>, y<span class="op">=</span><span class="st">"tip"</span>, data<span class="op">=</span>tips, marker<span class="op">=</span><span class="st">"o"</span>)</span>
-<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a><span class="al">![Basic seaborn graph](images/basic_sea.png)</span></span>
-<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Basic Graph Comparison</span></span>
-<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a>As you can see, the code to implement the basic plots for both libraries is about the same.</span>
-<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a>The only difference is that the matplotlib library sets the plot using *plt.plot*, while the </span>
-<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a>seaborn library uses *sns.lineplot*. Seaborn also requires a *x=* and *y=* phrase in *sns.lineplot* while *plt.plot* can just have the data in order of x then y. I did add the *marker="o"* for both libraries to make the data more visually appealing, but it **is not required** in the default graph. One things that is different is that the seaborn plot automatically adds lines between the different points while you would have to specifiy that with the matplotlib library.</span>
-<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a><span class="fu">## Detailed Graphs</span></span>
-<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a><span class="fu">### Detailed Matplotlib Graph</span></span>
-<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a><span class="in">```{python3}</span></span>
-<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>The goal is to demonstrate the strengths that both the matplotlib and seaborn libraries have</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>when plotting graphs. Only basic data will be plotted to illustrate the basic functions each</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>library has and the special features for plotting each library has. I will be plotting the same graphs (with some minor differences) using both libraries. When working on a project you may just want a "quick and dirty" graph that just shows you the data. Othertimes, you may want to make a nice plot to present to others. We will inspect both of the libraries so you can learn the advantages of both and see which one is more time efficient and better for you and your situation. Since the main purpose is to compare these libraries, I will not go into major detail the syntax and every capability of each library. </span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>For more information on how to use the seaborn library, visit <span class="co">[</span><span class="ot">Seaborn Function Overview</span><span class="co">](https://seaborn.pydata.org/tutorial/function_overview.html?utm_source=chatgpt.com)</span>. </span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>For more information on how to use the matplot library, visit <span class="co">[</span><span class="ot">Matplotlib Function Overview</span><span class="co">](https://matplotlib.org/stable/tutorials/index)</span>.</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Characteristics</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="fu">### Matplotlib</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Foundational library**</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Other graphing libraries are based off the matplotlib library. Even using other graphing libraries such as seaborn, you still need to import matplotlib and use some of its functions.</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Flexible but verbose**</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Its flexible in the many different features availbale, but it requires you to type a lot of code just to even label the graphs. It can't all be done in the same line, you have to specify specific functions each time which can be time-consuming and repetitive.</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Default look is plain**</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>The default look is very basic. If you want color and better backgrounds, you will have to specify it.</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Great for fine-grained customization**</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>You can change every little thing with the graph allowing you to get the exact graph you want.</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="fu">### Seaborn</span></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**High-level interface built on Matplotlib**</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Seaborn is built on top of Matplotlib, so it can use Matplotlib functions when needed, but it automates many common tasks like styling, grouping, and legends.</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Polished style defaults**</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Unlike Matplotlib’s plain default look, Seaborn comes with clean, attractive themes (e.g., *darkgrid*, *whitegrid*, *ticks* using the *set_style* function) that make plots visually appealing with minimal code.</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Statistical plotting built-in**</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Seaborn understands DataFrames and categorical variables. Functions like lineplot, barplot, and boxplot automatically handle grouping (*hue*, *col*, *row*) and aggregation (mean, confidence intervals), which saves a lot of manual coding.</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Great for quick exploratory plots**</span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>With just one line of code, you can generate complex plots that summarize trends, distributions, or relationships. Perfect for exploratory data analysis (EDA) and quick insights.</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a><span class="fu">## Graphs</span></span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a><span class="fu">### Matplotlib graph with minimum code</span></span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a><span class="in">```{python3}</span></span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a><span class="co"># Load dataset from seaborn</span></span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">"tips"</span>)</span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>plt.plot(tips[<span class="st">"total_bill"</span>], tips[<span class="st">"tip"</span>], <span class="st">"o"</span>) <span class="co">#"o" is making each datapoint a dot</span></span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a><span class="al">![Basic matplotlib graph](images/basic_mat.png)</span></span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a><span class="fu">### Seaborn graph with minimum code</span></span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a><span class="in">```{python3}</span></span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">"tips"</span>)</span>
+<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a>sns.lineplot(x<span class="op">=</span><span class="st">"total_bill"</span>, y<span class="op">=</span><span class="st">"tip"</span>, data<span class="op">=</span>tips, marker<span class="op">=</span><span class="st">"o"</span>)</span>
+<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a><span class="al">![Basic seaborn graph](images/basic_sea.png)</span></span>
+<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Basic Graph Comparison</span></span>
+<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a>As you can see, the code to implement the basic plots for both libraries is about the same.</span>
+<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a>The only difference is that the matplotlib library sets the plot using *plt.plot*, while the </span>
+<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a>seaborn library uses *sns.lineplot*. Seaborn also requires a *x=* and *y=* phrase in *sns.lineplot* while *plt.plot* can just have the data in order of x then y. I did add the *marker="o"* for both libraries to make the data more visually appealing, but it **is not required** in the default graph. One things that is different is that the seaborn plot automatically adds lines between the different points while you would have to specifiy that with the matplotlib library.</span>
+<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a><span class="fu">## Detailed Graphs</span></span>
+<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a><span class="fu">### Detailed Matplotlib Graph</span></span>
+<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a><span class="in">```{python3}</span></span>
+<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">"tips"</span>)</span>
 <span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">"tips"</span>)</span>
-<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a><span class="co"># Increase figure size</span></span>
-<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">7</span>))</span>
-<span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a><span class="co"># Get unique days for grouping</span></span>
-<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a>days <span class="op">=</span> tips[<span class="st">"day"</span>].unique()</span>
-<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> plt.get_cmap(<span class="st">"tab10"</span>).colors  <span class="co"># Color palette similar to Seaborn</span></span>
-<span id="cb5-88"><a href="#cb5-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-89"><a href="#cb5-89" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot each day separately</span></span>
-<span id="cb5-90"><a href="#cb5-90" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, day <span class="kw">in</span> <span class="bu">enumerate</span>(days):</span>
-<span id="cb5-91"><a href="#cb5-91" aria-hidden="true" tabindex="-1"></a>    day_data <span class="op">=</span> tips[tips[<span class="st">"day"</span>] <span class="op">==</span> day]</span>
-<span id="cb5-92"><a href="#cb5-92" aria-hidden="true" tabindex="-1"></a>    plt.plot(</span>
-<span id="cb5-93"><a href="#cb5-93" aria-hidden="true" tabindex="-1"></a>        day_data[<span class="st">"total_bill"</span>], </span>
-<span id="cb5-94"><a href="#cb5-94" aria-hidden="true" tabindex="-1"></a>        day_data[<span class="st">"tip"</span>], </span>
-<span id="cb5-95"><a href="#cb5-95" aria-hidden="true" tabindex="-1"></a>        linestyle<span class="op">=</span><span class="st">"--"</span>,     <span class="co"># Dashed line</span></span>
-<span id="cb5-96"><a href="#cb5-96" aria-hidden="true" tabindex="-1"></a>        marker<span class="op">=</span><span class="st">"o"</span>,         <span class="co"># Marker for each point</span></span>
-<span id="cb5-97"><a href="#cb5-97" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span>colors[i <span class="op">%</span> <span class="bu">len</span>(colors)], <span class="co">#assigns colors to the data</span></span>
-<span id="cb5-98"><a href="#cb5-98" aria-hidden="true" tabindex="-1"></a>        label<span class="op">=</span>day</span>
-<span id="cb5-99"><a href="#cb5-99" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb5-100"><a href="#cb5-100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-101"><a href="#cb5-101" aria-hidden="true" tabindex="-1"></a><span class="co"># Add title and labels</span></span>
-<span id="cb5-102"><a href="#cb5-102" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Tips by Total Bill (Grouped by Day)"</span>, fontsize<span class="op">=</span><span class="dv">16</span>)</span>
-<span id="cb5-103"><a href="#cb5-103" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Total Bill ($)"</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
-<span id="cb5-104"><a href="#cb5-104" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Tip ($)"</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
-<span id="cb5-105"><a href="#cb5-105" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-106"><a href="#cb5-106" aria-hidden="true" tabindex="-1"></a><span class="co"># Add grid</span></span>
-<span id="cb5-107"><a href="#cb5-107" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>, linestyle<span class="op">=</span><span class="st">"--"</span>, linewidth<span class="op">=</span><span class="fl">0.8</span>)</span>
-<span id="cb5-108"><a href="#cb5-108" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-109"><a href="#cb5-109" aria-hidden="true" tabindex="-1"></a><span class="co"># Customize legend</span></span>
-<span id="cb5-110"><a href="#cb5-110" aria-hidden="true" tabindex="-1"></a>plt.legend(title<span class="op">=</span><span class="st">"Day of Week"</span>, fontsize<span class="op">=</span><span class="dv">12</span>, title_fontsize<span class="op">=</span><span class="dv">13</span>)</span>
-<span id="cb5-111"><a href="#cb5-111" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb5-112"><a href="#cb5-112" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb5-113"><a href="#cb5-113" aria-hidden="true" tabindex="-1"></a><span class="al">![Detailed matplotlib graph](images/complex_mat.png)</span></span>
-<span id="cb5-114"><a href="#cb5-114" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-115"><a href="#cb5-115" aria-hidden="true" tabindex="-1"></a><span class="fu">### Detailed Seaborn graph </span></span>
-<span id="cb5-118"><a href="#cb5-118" aria-hidden="true" tabindex="-1"></a><span class="in">```{python3}</span></span>
-<span id="cb5-119"><a href="#cb5-119" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb5-120"><a href="#cb5-120" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb5-121"><a href="#cb5-121" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-122"><a href="#cb5-122" aria-hidden="true" tabindex="-1"></a><span class="co"># Load seaborn's built-in dataset</span></span>
-<span id="cb5-123"><a href="#cb5-123" aria-hidden="true" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">"tips"</span>)</span>
-<span id="cb5-124"><a href="#cb5-124" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-125"><a href="#cb5-125" aria-hidden="true" tabindex="-1"></a><span class="co"># Set Seaborn style and context</span></span>
-<span id="cb5-126"><a href="#cb5-126" aria-hidden="true" tabindex="-1"></a>sns.set_style(<span class="st">"darkgrid"</span>)       <span class="co"># Dark grid background</span></span>
-<span id="cb5-127"><a href="#cb5-127" aria-hidden="true" tabindex="-1"></a>sns.set_context(<span class="st">"talk"</span>)         <span class="co"># Slightly larger labels for presentation</span></span>
-<span id="cb5-128"><a href="#cb5-128" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-129"><a href="#cb5-129" aria-hidden="true" tabindex="-1"></a><span class="co"># Increase figure size</span></span>
-<span id="cb5-130"><a href="#cb5-130" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">7</span>))</span>
-<span id="cb5-131"><a href="#cb5-131" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-132"><a href="#cb5-132" aria-hidden="true" tabindex="-1"></a>sns.lineplot(</span>
-<span id="cb5-133"><a href="#cb5-133" aria-hidden="true" tabindex="-1"></a>    data<span class="op">=</span>tips,</span>
-<span id="cb5-134"><a href="#cb5-134" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">"total_bill"</span>,</span>
-<span id="cb5-135"><a href="#cb5-135" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span><span class="st">"tip"</span>,</span>
-<span id="cb5-136"><a href="#cb5-136" aria-hidden="true" tabindex="-1"></a>    hue<span class="op">=</span><span class="st">"day"</span>,            <span class="co"># Separate lines by day of week</span></span>
-<span id="cb5-137"><a href="#cb5-137" aria-hidden="true" tabindex="-1"></a>    style<span class="op">=</span><span class="st">"day"</span>,          <span class="co"># Different marker for each day</span></span>
-<span id="cb5-138"><a href="#cb5-138" aria-hidden="true" tabindex="-1"></a>    markers<span class="op">=</span><span class="va">True</span>,         <span class="co"># Show marker for each point</span></span>
-<span id="cb5-139"><a href="#cb5-139" aria-hidden="true" tabindex="-1"></a>    linestyle<span class="op">=</span><span class="st">"--"</span>,       <span class="co"># Dashed lines</span></span>
-<span id="cb5-140"><a href="#cb5-140" aria-hidden="true" tabindex="-1"></a>    palette<span class="op">=</span><span class="st">"tab10"</span>,      <span class="co"># Custom color palette</span></span>
-<span id="cb5-141"><a href="#cb5-141" aria-hidden="true" tabindex="-1"></a>    ci<span class="op">=</span><span class="dv">95</span>                 <span class="co"># 95% confidence interval shading</span></span>
-<span id="cb5-142"><a href="#cb5-142" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb5-143"><a href="#cb5-143" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Tips by Total Bill (Grouped by Day)"</span>, fontsize<span class="op">=</span><span class="dv">16</span>)</span>
-<span id="cb5-144"><a href="#cb5-144" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Total Bill ($)"</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
-<span id="cb5-145"><a href="#cb5-145" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Tip ($)"</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
-<span id="cb5-146"><a href="#cb5-146" aria-hidden="true" tabindex="-1"></a>plt.legend(title<span class="op">=</span><span class="st">"Day of Week"</span>, fontsize<span class="op">=</span><span class="dv">12</span>, title_fontsize<span class="op">=</span><span class="dv">13</span>)</span>
-<span id="cb5-147"><a href="#cb5-147" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb5-148"><a href="#cb5-148" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb5-149"><a href="#cb5-149" aria-hidden="true" tabindex="-1"></a><span class="al">![Detailed seaborn graph](images/complex_sea.png)</span></span>
-<span id="cb5-150"><a href="#cb5-150" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-151"><a href="#cb5-151" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Detailed Graph Comparison</span></span>
-<span id="cb5-152"><a href="#cb5-152" aria-hidden="true" tabindex="-1"></a>These graphs may not be pretty, but they were made to show the main differences between</span>
-<span id="cb5-153"><a href="#cb5-153" aria-hidden="true" tabindex="-1"></a>the matplotlib and the seaborn libraries. The tips dataset is a dataset built into the seaborn library so we will use it for both graphs, but for the matplotlib graph, we will still only use functions from the matplotlib library. The main bits of code that the matplotlib library implemented to have the same graph as the seaborn library plot were the *plt.get_camp()*, and the for loop going through the different information. With this dataset, the matplotlib library needed the for loop seperate lines for each day of the week. The for loop splits the data by day, plots each subset with its own color, and manually adds a line. Seaborn is really covenient here because it does all this automatically with the *hue* function. Seaborn will also automatically choose styles based off of the *hue* function. We can specify the line type here to make it the same as the matplotlib plot, but without it, it would just choose one that it thinks looks the best. Seaborn also has the *set_style()* function that allows us to change the look of the entire plot. With *darkgrid* it gives you a dark background grid with white lines. Seaborn is built on matplotlib so it does still use the same method of assigning titles and axes as the matplotlib library.</span>
-<span id="cb5-154"><a href="#cb5-154" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-155"><a href="#cb5-155" aria-hidden="true" tabindex="-1"></a><span class="fu">### Which One Is Better?</span></span>
-<span id="cb5-156"><a href="#cb5-156" aria-hidden="true" tabindex="-1"></a>That really depends on what you want to do and the data you are graphing. If you want to customize every little thing in the graph, plotting functions such as cos or sin, or using very large datasets, matplotlib library is usually better. Seaborn is typically better if you just want a quick look at the data since it automatically adds colors and organizes the data on the graph in a neat way. It's also more useful if you're using a pandas dataframe and want statistical graphs that are beautiful. I invite you all to try out the matplotlib and seaborn library by asking AI for a dataset you can use to use the different features to see which one you prefer.</span>
+<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a><span class="co"># Increase figure size</span></span>
+<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">7</span>))</span>
+<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a><span class="co"># Get unique days for grouping</span></span>
+<span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a>days <span class="op">=</span> tips[<span class="st">"day"</span>].unique()</span>
+<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> plt.get_cmap(<span class="st">"tab10"</span>).colors  <span class="co"># Color palette similar to Seaborn</span></span>
+<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot each day separately</span></span>
+<span id="cb5-88"><a href="#cb5-88" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, day <span class="kw">in</span> <span class="bu">enumerate</span>(days):</span>
+<span id="cb5-89"><a href="#cb5-89" aria-hidden="true" tabindex="-1"></a>    day_data <span class="op">=</span> tips[tips[<span class="st">"day"</span>] <span class="op">==</span> day]</span>
+<span id="cb5-90"><a href="#cb5-90" aria-hidden="true" tabindex="-1"></a>    plt.plot(</span>
+<span id="cb5-91"><a href="#cb5-91" aria-hidden="true" tabindex="-1"></a>        day_data[<span class="st">"total_bill"</span>], </span>
+<span id="cb5-92"><a href="#cb5-92" aria-hidden="true" tabindex="-1"></a>        day_data[<span class="st">"tip"</span>], </span>
+<span id="cb5-93"><a href="#cb5-93" aria-hidden="true" tabindex="-1"></a>        linestyle<span class="op">=</span><span class="st">"--"</span>,     <span class="co"># Dashed line</span></span>
+<span id="cb5-94"><a href="#cb5-94" aria-hidden="true" tabindex="-1"></a>        marker<span class="op">=</span><span class="st">"o"</span>,         <span class="co"># Marker for each point</span></span>
+<span id="cb5-95"><a href="#cb5-95" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span>colors[i <span class="op">%</span> <span class="bu">len</span>(colors)], <span class="co">#assigns colors to the data</span></span>
+<span id="cb5-96"><a href="#cb5-96" aria-hidden="true" tabindex="-1"></a>        label<span class="op">=</span>day</span>
+<span id="cb5-97"><a href="#cb5-97" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb5-98"><a href="#cb5-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-99"><a href="#cb5-99" aria-hidden="true" tabindex="-1"></a><span class="co"># Add title and labels</span></span>
+<span id="cb5-100"><a href="#cb5-100" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Tips by Total Bill (Grouped by Day)"</span>, fontsize<span class="op">=</span><span class="dv">16</span>)</span>
+<span id="cb5-101"><a href="#cb5-101" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Total Bill ($)"</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb5-102"><a href="#cb5-102" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Tip ($)"</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb5-103"><a href="#cb5-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-104"><a href="#cb5-104" aria-hidden="true" tabindex="-1"></a><span class="co"># Add grid</span></span>
+<span id="cb5-105"><a href="#cb5-105" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>, linestyle<span class="op">=</span><span class="st">"--"</span>, linewidth<span class="op">=</span><span class="fl">0.8</span>)</span>
+<span id="cb5-106"><a href="#cb5-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-107"><a href="#cb5-107" aria-hidden="true" tabindex="-1"></a><span class="co"># Customize legend</span></span>
+<span id="cb5-108"><a href="#cb5-108" aria-hidden="true" tabindex="-1"></a>plt.legend(title<span class="op">=</span><span class="st">"Day of Week"</span>, fontsize<span class="op">=</span><span class="dv">12</span>, title_fontsize<span class="op">=</span><span class="dv">13</span>)</span>
+<span id="cb5-109"><a href="#cb5-109" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb5-110"><a href="#cb5-110" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-111"><a href="#cb5-111" aria-hidden="true" tabindex="-1"></a><span class="al">![Detailed matplotlib graph](images/complex_mat.png)</span></span>
+<span id="cb5-112"><a href="#cb5-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-113"><a href="#cb5-113" aria-hidden="true" tabindex="-1"></a><span class="fu">### Detailed Seaborn graph </span></span>
+<span id="cb5-116"><a href="#cb5-116" aria-hidden="true" tabindex="-1"></a><span class="in">```{python3}</span></span>
+<span id="cb5-117"><a href="#cb5-117" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb5-118"><a href="#cb5-118" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb5-119"><a href="#cb5-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-120"><a href="#cb5-120" aria-hidden="true" tabindex="-1"></a><span class="co"># Load seaborn's built-in dataset</span></span>
+<span id="cb5-121"><a href="#cb5-121" aria-hidden="true" tabindex="-1"></a>tips <span class="op">=</span> sns.load_dataset(<span class="st">"tips"</span>)</span>
+<span id="cb5-122"><a href="#cb5-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-123"><a href="#cb5-123" aria-hidden="true" tabindex="-1"></a><span class="co"># Set Seaborn style and context</span></span>
+<span id="cb5-124"><a href="#cb5-124" aria-hidden="true" tabindex="-1"></a>sns.set_style(<span class="st">"darkgrid"</span>)       <span class="co"># Dark grid background</span></span>
+<span id="cb5-125"><a href="#cb5-125" aria-hidden="true" tabindex="-1"></a>sns.set_context(<span class="st">"talk"</span>)         <span class="co"># Slightly larger labels for presentation</span></span>
+<span id="cb5-126"><a href="#cb5-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-127"><a href="#cb5-127" aria-hidden="true" tabindex="-1"></a><span class="co"># Increase figure size</span></span>
+<span id="cb5-128"><a href="#cb5-128" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">7</span>))</span>
+<span id="cb5-129"><a href="#cb5-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-130"><a href="#cb5-130" aria-hidden="true" tabindex="-1"></a>sns.lineplot(</span>
+<span id="cb5-131"><a href="#cb5-131" aria-hidden="true" tabindex="-1"></a>    data<span class="op">=</span>tips,</span>
+<span id="cb5-132"><a href="#cb5-132" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">"total_bill"</span>,</span>
+<span id="cb5-133"><a href="#cb5-133" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span><span class="st">"tip"</span>,</span>
+<span id="cb5-134"><a href="#cb5-134" aria-hidden="true" tabindex="-1"></a>    hue<span class="op">=</span><span class="st">"day"</span>,            <span class="co"># Separate lines by day of week</span></span>
+<span id="cb5-135"><a href="#cb5-135" aria-hidden="true" tabindex="-1"></a>    style<span class="op">=</span><span class="st">"day"</span>,          <span class="co"># Different marker for each day</span></span>
+<span id="cb5-136"><a href="#cb5-136" aria-hidden="true" tabindex="-1"></a>    markers<span class="op">=</span><span class="va">True</span>,         <span class="co"># Show marker for each point</span></span>
+<span id="cb5-137"><a href="#cb5-137" aria-hidden="true" tabindex="-1"></a>    linestyle<span class="op">=</span><span class="st">"--"</span>,       <span class="co"># Dashed lines</span></span>
+<span id="cb5-138"><a href="#cb5-138" aria-hidden="true" tabindex="-1"></a>    palette<span class="op">=</span><span class="st">"tab10"</span>,      <span class="co"># Custom color palette</span></span>
+<span id="cb5-139"><a href="#cb5-139" aria-hidden="true" tabindex="-1"></a>    ci<span class="op">=</span><span class="dv">95</span>                 <span class="co"># 95% confidence interval shading</span></span>
+<span id="cb5-140"><a href="#cb5-140" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-141"><a href="#cb5-141" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Tips by Total Bill (Grouped by Day)"</span>, fontsize<span class="op">=</span><span class="dv">16</span>)</span>
+<span id="cb5-142"><a href="#cb5-142" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Total Bill ($)"</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb5-143"><a href="#cb5-143" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Tip ($)"</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb5-144"><a href="#cb5-144" aria-hidden="true" tabindex="-1"></a>plt.legend(title<span class="op">=</span><span class="st">"Day of Week"</span>, fontsize<span class="op">=</span><span class="dv">12</span>, title_fontsize<span class="op">=</span><span class="dv">13</span>)</span>
+<span id="cb5-145"><a href="#cb5-145" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb5-146"><a href="#cb5-146" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-147"><a href="#cb5-147" aria-hidden="true" tabindex="-1"></a><span class="al">![Detailed seaborn graph](images/complex_sea.png)</span></span>
+<span id="cb5-148"><a href="#cb5-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-149"><a href="#cb5-149" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Detailed Graph Comparison</span></span>
+<span id="cb5-150"><a href="#cb5-150" aria-hidden="true" tabindex="-1"></a>These graphs may not be pretty, but they were made to show the main differences between</span>
+<span id="cb5-151"><a href="#cb5-151" aria-hidden="true" tabindex="-1"></a>the matplotlib and the seaborn libraries. The tips dataset is a dataset built into the seaborn library so we will use it for both graphs, but for the matplotlib graph, we will still only use functions from the matplotlib library. The main bits of code that the matplotlib library implemented to have the same graph as the seaborn library plot were the *plt.get_camp()*, and the for loop going through the different information. With this dataset, the matplotlib library needed the for loop seperate lines for each day of the week. The for loop splits the data by day, plots each subset with its own color, and manually adds a line. Seaborn is really covenient here because it does all this automatically with the *hue* function. Seaborn will also automatically choose styles based off of the *hue* function. We can specify the line type here to make it the same as the matplotlib plot, but without it, it would just choose one that it thinks looks the best. Seaborn also has the *set_style()* function that allows us to change the look of the entire plot. With *darkgrid* it gives you a dark background grid with white lines. Seaborn is built on matplotlib so it does still use the same method of assigning titles and axes as the matplotlib library.</span>
+<span id="cb5-152"><a href="#cb5-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-153"><a href="#cb5-153" aria-hidden="true" tabindex="-1"></a><span class="fu">### Which One Is Better?</span></span>
+<span id="cb5-154"><a href="#cb5-154" aria-hidden="true" tabindex="-1"></a>That really depends on what you want to do and the data you are graphing. If you want to customize every little thing in the graph, plotting functions such as cos or sin, or using very large datasets, matplotlib library is usually better. Seaborn is typically better if you just want a quick look at the data since it automatically adds colors and organizes the data on the graph in a neat way. It's also more useful if you're using a pandas dataframe and want statistical graphs that are beautiful. I invite you all to try out the matplotlib and seaborn library by asking AI for a dataset you can use to use the different features to see which one you prefer.</span>
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

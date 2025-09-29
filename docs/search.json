@@ -28,95 +28,87 @@
     "text": "Learn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
   },
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects Overview",
-    "section": "",
-    "text": "Description: Pick a dataset and explore it to discover insights and answer questions.\n\n\n\nDescription: Find an interesting data source, collect the data, and prepare it for analysis.\n\n\n\nDescription: A comprehensive project that shows off my data science skills.",
-    "crumbs": [
-      "Projects Overview"
-    ]
-  },
-  {
-    "objectID": "projects/index.html#all-projects",
-    "href": "projects/index.html#all-projects",
-    "title": "Projects Overview",
-    "section": "",
-    "text": "Description: Pick a dataset and explore it to discover insights and answer questions.\n\n\n\nDescription: Find an interesting data source, collect the data, and prepare it for analysis.\n\n\n\nDescription: A comprehensive project that shows off my data science skills.",
-    "crumbs": [
-      "Projects Overview"
-    ]
-  },
-  {
-    "objectID": "projects/eda.html",
-    "href": "projects/eda.html",
-    "title": "EDA Project",
-    "section": "",
-    "text": "This is coming down the pipeline. Check again later.",
-    "crumbs": [
-      "EDA Project"
-    ]
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "Write a brief introduction about yourself here. Include:\n\nYour academic background\nYour interest in data science\nYour career goals\nAny relevant experience or projects"
+    "text": "Write a brief introduction about yourself here. Include:\n\nI’m currently a junior at Brigham Young University studying Statistics with an emphasis in Data Science planning to enter the Master’s Program in Fall 2026.\nMy interest in data scientist stems from my love for problem solving and working with data to find solutions, and I also had an interest in computer science. I discovered data science as a field that combines both of these interests through of mentor of mine.\nMy goal is to work for a financial company to use data analysis to help make better financial decisions.\nUnited States Powerlifting R Project"
   },
   {
     "objectID": "about.html#background",
     "href": "about.html#background",
     "title": "About Me",
     "section": "",
-    "text": "Write a brief introduction about yourself here. Include:\n\nYour academic background\nYour interest in data science\nYour career goals\nAny relevant experience or projects"
+    "text": "Write a brief introduction about yourself here. Include:\n\nI’m currently a junior at Brigham Young University studying Statistics with an emphasis in Data Science planning to enter the Master’s Program in Fall 2026.\nMy interest in data scientist stems from my love for problem solving and working with data to find solutions, and I also had an interest in computer science. I discovered data science as a field that combines both of these interests through of mentor of mine.\nMy goal is to work for a financial company to use data analysis to help make better financial decisions.\nUnited States Powerlifting R Project"
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
     "title": "About Me",
     "section": "Education",
-    "text": "Education\n\n[Your Degree] - [University Name], [Year]\nRelevant Coursework: Statistics, Data Analysis, Programming, etc."
+    "text": "Education\n\nStatistics: Emphasis in Data Science - Brigham Young University, 2026(Expected)\nRelevant Coursework: Statistics, Data Analysis, Programming, etc."
   },
   {
     "objectID": "about.html#skills-interests",
     "href": "about.html#skills-interests",
     "title": "About Me",
     "section": "Skills & Interests",
-    "text": "Skills & Interests\n\nTechnical Skills\n\nProgramming: Python\nData Analysis: Pandas, NumPy\nVisualization: Matplotlib, Seaborn\nMachine Learning: Scikit-learn\nTools: Jupyter Notebooks, Git/GitHub\n\n\n\nAreas of Interest\n\n[Your specific interests, e.g., environmental data, healthcare analytics, finance, etc.]\n[Other areas you’re curious about]"
+    "text": "Skills & Interests\n\nTechnical Skills\n\nProgramming: Python\nData Analysis: Pandas, NumPy\nVisualization: Matplotlib, Seaborn\nMachine Learning: Scikit-learn\nTools: Jupyter Notebooks, Git/GitHub\n\n\n\nAreas of Interest\n\nI’m interested in financial data analysis, AI and machine learning.\nI’m also interested in predictive modeling and data visualization."
   },
   {
     "objectID": "about.html#goals",
     "href": "about.html#goals",
     "title": "About Me",
     "section": "Goals",
-    "text": "Goals\nDescribe what you hope to achieve through your data science journey:\n\nShort-term learning objectives\nLong-term career aspirations\nTypes of problems you want to solve"
+    "text": "Goals\nDescribe what you hope to achieve through your data science journey:\n\nLearn advanced machine learning techniques and work on real-world projects\nManage a team of other data scientists\nMake an AI model capable of accurately predicting stock prices"
   },
   {
     "objectID": "about.html#contact",
     "href": "about.html#contact",
     "title": "About Me",
     "section": "Contact",
-    "text": "Contact\n\nEmail: your.email@example.com\nGitHub: github.com/your-username\nLinkedIn: linkedin.com/in/your-profile\n\n\nThis portfolio showcases my learning progress and projects completed during my data science studies."
+    "text": "Contact\n\nEmail: atwoodridge@gmail.com\nGitHub: github.com/Ridge42\nLinkedIn: linkedin.com/in/your-profile\n\n\nThis portfolio showcases my learning progress and projects completed during my data science studies."
   },
   {
-    "objectID": "projects/data-acquisition.html",
-    "href": "projects/data-acquisition.html",
-    "title": "Data Acquisition Project",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
     "section": "",
-    "text": "This is coming down the pipeline. Check again later.",
-    "crumbs": [
-      "Data Acquisition Project"
-    ]
+    "text": "The goal is to demonstrate the strengths that both the matplotlib and seaborn libraries have when plotting graphs. Only basic data will be plotted to illustrate the basic functions each library has and the special features for plotting each library has. I will be plotting the same graphs (with some minor differences) using both libraries. When working on a project you may just want a “quick and dirty” graph that just shows you the data. Othertimes, you may want to make a nice plot to present to others. We will inspect both of the libraries so you can learn the advantages of both and see which one is more time efficient and better for you and your situation. Since the main purpose is to compare these libraries, I will not go into major detail the syntax and every capability of each library. For more information on how to use the seaborn library, visit Seaborn Function Overview. For more information on how to use the matplot library, visit Matplotlib Function Overview.\n\n\n\n\n\n\nFoundational library\n\nOther graphing libraries are based off the matplotlib library. Even using other graphing libraries such as seaborn, you still need to import matplotlib and use some of its functions.\n\nFlexible but verbose\n\nIts flexible in the many different features availbale, but it requires you to type a lot of code just to even label the graphs. It can’t all be done in the same line, you have to specify specific functions each time which can be time-consuming and repetitive.\n\nDefault look is plain\n\nThe default look is very basic. If you want color and better backgrounds, you will have to specify it.\n\nGreat for fine-grained customization\n\nYou can change every little thing with the graph allowing you to get the exact graph you want.\n\n\n\n\n\n\nHigh-level interface built on Matplotlib\n\nSeaborn is built on top of Matplotlib, so it can use Matplotlib functions when needed, but it automates many common tasks like styling, grouping, and legends.\n\nPolished style defaults\n\nUnlike Matplotlib’s plain default look, Seaborn comes with clean, attractive themes (e.g., darkgrid, whitegrid, ticks using the set_style function) that make plots visually appealing with minimal code.\n\nStatistical plotting built-in\n\nSeaborn understands DataFrames and categorical variables. Functions like lineplot, barplot, and boxplot automatically handle grouping (hue, col, row) and aggregation (mean, confidence intervals), which saves a lot of manual coding.\n\nGreat for quick exploratory plots\n\nWith just one line of code, you can generate complex plots that summarize trends, distributions, or relationships. Perfect for exploratory data analysis (EDA) and quick insights.\n\n\n\n\n\n\n\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\n# Load dataset from seaborn\ntips = sns.load_dataset(\"tips\")\nplt.plot(tips[\"total_bill\"], tips[\"tip\"], \"o\") #\"o\" is making each datapoint a dot\nplt.show()\n\n\n\nBasic matplotlib graph\n\n\n\n\n\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\ntips = sns.load_dataset(\"tips\")\nsns.lineplot(x=\"total_bill\", y=\"tip\", data=tips, marker=\"o\")\nplt.show()\n\n\n\nBasic seaborn graph\n\n\n\n\nAs you can see, the code to implement the basic plots for both libraries is about the same. The only difference is that the matplotlib library sets the plot using plt.plot, while the seaborn library uses sns.lineplot. Seaborn also requires a x= and y= phrase in sns.lineplot while plt.plot can just have the data in order of x then y. I did add the marker=“o” for both libraries to make the data more visually appealing, but it is not required in the default graph. One things that is different is that the seaborn plot automatically adds lines between the different points while you would have to specifiy that with the matplotlib library.\n\n\n\n\n\n\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\ntips = sns.load_dataset(\"tips\")\n\n# Increase figure size\nplt.figure(figsize=(12, 7))\n\n# Get unique days for grouping\ndays = tips[\"day\"].unique()\ncolors = plt.get_cmap(\"tab10\").colors  # Color palette similar to Seaborn\n\n# Plot each day separately\nfor i, day in enumerate(days):\n    day_data = tips[tips[\"day\"] == day]\n    plt.plot(\n        day_data[\"total_bill\"], \n        day_data[\"tip\"], \n        linestyle=\"--\",     # Dashed line\n        marker=\"o\",         # Marker for each point\n        color=colors[i % len(colors)], #assigns colors to the data\n        label=day\n    )\n\n# Add title and labels\nplt.title(\"Tips by Total Bill (Grouped by Day)\", fontsize=16)\nplt.xlabel(\"Total Bill ($)\", fontsize=14)\nplt.ylabel(\"Tip ($)\", fontsize=14)\n\n# Add grid\nplt.grid(True, linestyle=\"--\", linewidth=0.8)\n\n# Customize legend\nplt.legend(title=\"Day of Week\", fontsize=12, title_fontsize=13)\nplt.show()\n\n\n\nDetailed matplotlib graph\n\n\n\n\n\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Load seaborn's built-in dataset\ntips = sns.load_dataset(\"tips\")\n\n# Set Seaborn style and context\nsns.set_style(\"darkgrid\")       # Dark grid background\nsns.set_context(\"talk\")         # Slightly larger labels for presentation\n\n# Increase figure size\nplt.figure(figsize=(12, 7))\n\nsns.lineplot(\n    data=tips,\n    x=\"total_bill\",\n    y=\"tip\",\n    hue=\"day\",            # Separate lines by day of week\n    style=\"day\",          # Different marker for each day\n    markers=True,         # Show marker for each point\n    linestyle=\"--\",       # Dashed lines\n    palette=\"tab10\",      # Custom color palette\n    ci=95                 # 95% confidence interval shading\n)\nplt.title(\"Tips by Total Bill (Grouped by Day)\", fontsize=16)\nplt.xlabel(\"Total Bill ($)\", fontsize=14)\nplt.ylabel(\"Tip ($)\", fontsize=14)\nplt.legend(title=\"Day of Week\", fontsize=12, title_fontsize=13)\nplt.show()\n\n\n\nDetailed seaborn graph\n\n\n\n\nThese graphs may not be pretty, but they were made to show the main differences between the matplotlib and the seaborn libraries. The tips dataset is a dataset built into the seaborn library so we will use it for both graphs, but for the matplotlib graph, we will still only use functions from the matplotlib library. The main bits of code that the matplotlib library implemented to have the same graph as the seaborn library plot were the plt.get_camp(), and the for loop going through the different information. With this dataset, the matplotlib library needed the for loop seperate lines for each day of the week. The for loop splits the data by day, plots each subset with its own color, and manually adds a line. Seaborn is really covenient here because it does all this automatically with the hue function. Seaborn will also automatically choose styles based off of the hue function. We can specify the line type here to make it the same as the matplotlib plot, but without it, it would just choose one that it thinks looks the best. Seaborn also has the set_style() function that allows us to change the look of the entire plot. With darkgrid it gives you a dark background grid with white lines. Seaborn is built on matplotlib so it does still use the same method of assigning titles and axes as the matplotlib library.\n\n\n\n\nThat really depends on what you want to do and the data you are graphing. If you want to customize every little thing in the graph, plotting functions such as cos or sin, or using very large datasets, matplotlib library is usually better. Seaborn is typically better if you just want a quick look at the data since it automatically adds colors and organizes the data on the graph in a neat way. It’s also more useful if you’re using a pandas dataframe and want statistical graphs that are beautiful. I invite you all to try out the matplotlib and seaborn library by asking AI for a dataset you can use to use the different features to see which one you prefer."
   },
   {
-    "objectID": "projects/final-project.html",
-    "href": "projects/final-project.html",
-    "title": "Final Project",
+    "objectID": "blog.html#purpose-of-this-article",
+    "href": "blog.html#purpose-of-this-article",
+    "title": "Blog",
     "section": "",
-    "text": "This is coming down the pipeline. Check again later.",
-    "crumbs": [
-      "Final Project"
-    ]
+    "text": "The goal is to demonstrate the strengths that both the matplotlib and seaborn libraries have when plotting graphs. Only basic data will be plotted to illustrate the basic functions each library has and the special features for plotting each library has. I will be plotting the same graphs (with some minor differences) using both libraries. When working on a project you may just want a “quick and dirty” graph that just shows you the data. Othertimes, you may want to make a nice plot to present to others. We will inspect both of the libraries so you can learn the advantages of both and see which one is more time efficient and better for you and your situation. Since the main purpose is to compare these libraries, I will not go into major detail the syntax and every capability of each library. For more information on how to use the seaborn library, visit Seaborn Function Overview. For more information on how to use the matplot library, visit Matplotlib Function Overview."
+  },
+  {
+    "objectID": "blog.html#characteristics",
+    "href": "blog.html#characteristics",
+    "title": "Blog",
+    "section": "",
+    "text": "Foundational library\n\nOther graphing libraries are based off the matplotlib library. Even using other graphing libraries such as seaborn, you still need to import matplotlib and use some of its functions.\n\nFlexible but verbose\n\nIts flexible in the many different features availbale, but it requires you to type a lot of code just to even label the graphs. It can’t all be done in the same line, you have to specify specific functions each time which can be time-consuming and repetitive.\n\nDefault look is plain\n\nThe default look is very basic. If you want color and better backgrounds, you will have to specify it.\n\nGreat for fine-grained customization\n\nYou can change every little thing with the graph allowing you to get the exact graph you want.\n\n\n\n\n\n\nHigh-level interface built on Matplotlib\n\nSeaborn is built on top of Matplotlib, so it can use Matplotlib functions when needed, but it automates many common tasks like styling, grouping, and legends.\n\nPolished style defaults\n\nUnlike Matplotlib’s plain default look, Seaborn comes with clean, attractive themes (e.g., darkgrid, whitegrid, ticks using the set_style function) that make plots visually appealing with minimal code.\n\nStatistical plotting built-in\n\nSeaborn understands DataFrames and categorical variables. Functions like lineplot, barplot, and boxplot automatically handle grouping (hue, col, row) and aggregation (mean, confidence intervals), which saves a lot of manual coding.\n\nGreat for quick exploratory plots\n\nWith just one line of code, you can generate complex plots that summarize trends, distributions, or relationships. Perfect for exploratory data analysis (EDA) and quick insights."
+  },
+  {
+    "objectID": "blog.html#graphs",
+    "href": "blog.html#graphs",
+    "title": "Blog",
+    "section": "",
+    "text": "import matplotlib.pyplot as plt\nimport seaborn as sns\n\n# Load dataset from seaborn\ntips = sns.load_dataset(\"tips\")\nplt.plot(tips[\"total_bill\"], tips[\"tip\"], \"o\") #\"o\" is making each datapoint a dot\nplt.show()\n\n\n\nBasic matplotlib graph\n\n\n\n\n\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\ntips = sns.load_dataset(\"tips\")\nsns.lineplot(x=\"total_bill\", y=\"tip\", data=tips, marker=\"o\")\nplt.show()\n\n\n\nBasic seaborn graph\n\n\n\n\nAs you can see, the code to implement the basic plots for both libraries is about the same. The only difference is that the matplotlib library sets the plot using plt.plot, while the seaborn library uses sns.lineplot. Seaborn also requires a x= and y= phrase in sns.lineplot while plt.plot can just have the data in order of x then y. I did add the marker=“o” for both libraries to make the data more visually appealing, but it is not required in the default graph. One things that is different is that the seaborn plot automatically adds lines between the different points while you would have to specifiy that with the matplotlib library."
+  },
+  {
+    "objectID": "blog.html#detailed-graphs",
+    "href": "blog.html#detailed-graphs",
+    "title": "Blog",
+    "section": "",
+    "text": "import matplotlib.pyplot as plt\nimport seaborn as sns\n\ntips = sns.load_dataset(\"tips\")\n\n# Increase figure size\nplt.figure(figsize=(12, 7))\n\n# Get unique days for grouping\ndays = tips[\"day\"].unique()\ncolors = plt.get_cmap(\"tab10\").colors  # Color palette similar to Seaborn\n\n# Plot each day separately\nfor i, day in enumerate(days):\n    day_data = tips[tips[\"day\"] == day]\n    plt.plot(\n        day_data[\"total_bill\"], \n        day_data[\"tip\"], \n        linestyle=\"--\",     # Dashed line\n        marker=\"o\",         # Marker for each point\n        color=colors[i % len(colors)], #assigns colors to the data\n        label=day\n    )\n\n# Add title and labels\nplt.title(\"Tips by Total Bill (Grouped by Day)\", fontsize=16)\nplt.xlabel(\"Total Bill ($)\", fontsize=14)\nplt.ylabel(\"Tip ($)\", fontsize=14)\n\n# Add grid\nplt.grid(True, linestyle=\"--\", linewidth=0.8)\n\n# Customize legend\nplt.legend(title=\"Day of Week\", fontsize=12, title_fontsize=13)\nplt.show()\n\n\n\nDetailed matplotlib graph\n\n\n\n\n\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Load seaborn's built-in dataset\ntips = sns.load_dataset(\"tips\")\n\n# Set Seaborn style and context\nsns.set_style(\"darkgrid\")       # Dark grid background\nsns.set_context(\"talk\")         # Slightly larger labels for presentation\n\n# Increase figure size\nplt.figure(figsize=(12, 7))\n\nsns.lineplot(\n    data=tips,\n    x=\"total_bill\",\n    y=\"tip\",\n    hue=\"day\",            # Separate lines by day of week\n    style=\"day\",          # Different marker for each day\n    markers=True,         # Show marker for each point\n    linestyle=\"--\",       # Dashed lines\n    palette=\"tab10\",      # Custom color palette\n    ci=95                 # 95% confidence interval shading\n)\nplt.title(\"Tips by Total Bill (Grouped by Day)\", fontsize=16)\nplt.xlabel(\"Total Bill ($)\", fontsize=14)\nplt.ylabel(\"Tip ($)\", fontsize=14)\nplt.legend(title=\"Day of Week\", fontsize=12, title_fontsize=13)\nplt.show()\n\n\n\nDetailed seaborn graph\n\n\n\n\nThese graphs may not be pretty, but they were made to show the main differences between the matplotlib and the seaborn libraries. The tips dataset is a dataset built into the seaborn library so we will use it for both graphs, but for the matplotlib graph, we will still only use functions from the matplotlib library. The main bits of code that the matplotlib library implemented to have the same graph as the seaborn library plot were the plt.get_camp(), and the for loop going through the different information. With this dataset, the matplotlib library needed the for loop seperate lines for each day of the week. The for loop splits the data by day, plots each subset with its own color, and manually adds a line. Seaborn is really covenient here because it does all this automatically with the hue function. Seaborn will also automatically choose styles based off of the hue function. We can specify the line type here to make it the same as the matplotlib plot, but without it, it would just choose one that it thinks looks the best. Seaborn also has the set_style() function that allows us to change the look of the entire plot. With darkgrid it gives you a dark background grid with white lines. Seaborn is built on matplotlib so it does still use the same method of assigning titles and axes as the matplotlib library.\n\n\n\n\nThat really depends on what you want to do and the data you are graphing. If you want to customize every little thing in the graph, plotting functions such as cos or sin, or using very large datasets, matplotlib library is usually better. Seaborn is typically better if you just want a quick look at the data since it automatically adds colors and organizes the data on the graph in a neat way. It’s also more useful if you’re using a pandas dataframe and want statistical graphs that are beautiful. I invite you all to try out the matplotlib and seaborn library by asking AI for a dataset you can use to use the different features to see which one you prefer."
+  },
+  {
+    "objectID": "blog.html#cta",
+    "href": "blog.html#cta",
+    "title": "Blog",
+    "section": "",
+    "text": "I invite you all to try out the seaborn library the next time you need a graph to get used to the syntax and see how you like it compared to the matplotlib library."
   }
 ]

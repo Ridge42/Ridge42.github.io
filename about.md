@@ -6,14 +6,14 @@ title: "About Me"
 
 Write a brief introduction about yourself here. Include:
 
-- Your academic background
-- Your interest in data science
-- Your career goals
-- Any relevant experience or projects
+- I'm currently a junior at Brigham Young University studying Statistics with an emphasis in Data Science planning to enter the Master's Program in Fall 2026.
+- My interest in data scientist stems from my love for problem solving and working with data to find solutions, and I also had an interest in computer science. I discovered data science as a field that combines both of these interests through of mentor of mine.
+- My goal is to work for a financial company to use data analysis to help make better financial decisions.
+- United States Powerlifting R Project
 
 ## Education
 
-- **[Your Degree]** - [University Name], [Year]
+- **Statistics: Emphasis in Data Science** - Brigham Young University, 2026(Expected)
 - **Relevant Coursework**: Statistics, Data Analysis, Programming, etc.
 
 ## Skills & Interests
@@ -26,21 +26,21 @@ Write a brief introduction about yourself here. Include:
 - **Tools**: Jupyter Notebooks, Git/GitHub
 
 ### Areas of Interest
-- [Your specific interests, e.g., environmental data, healthcare analytics, finance, etc.]
-- [Other areas you're curious about]
+- I'm interested in financial data analysis, AI and machine learning.
+- I'm also interested in predictive modeling and data visualization.
 
 ## Goals
 
 Describe what you hope to achieve through your data science journey:
 
-- Short-term learning objectives
-- Long-term career aspirations
-- Types of problems you want to solve
+- Learn advanced machine learning techniques and work on real-world projects
+- Manage a team of other data scientists
+- Make an AI model capable of accurately predicting stock prices
 
 ## Contact
 
-- **Email**: your.email@example.com
-- **GitHub**: [github.com/your-username](https://github.com/your-username)
+- **Email**: atwoodridge@gmail.com
+- **GitHub**: [github.com/Ridge42](https://github.com/Ridge42)
 - **LinkedIn**: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
 
 ---

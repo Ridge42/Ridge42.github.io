@@ -10,8 +10,8 @@ jupyter: python3
 The goal is to demonstrate the strengths that both the matplotlib and seaborn libraries have
 when plotting graphs. Only basic data will be plotted to illustrate the basic functions each
 library has and the special features for plotting each library has. I will be plotting the same graphs (with some minor differences) using both libraries. When working on a project you may just want a "quick and dirty" graph that just shows you the data. Othertimes, you may want to make a nice plot to present to others. We will inspect both of the libraries so you can learn the advantages of both and see which one is more time efficient and better for you and your situation. Since the main purpose is to compare these libraries, I will not go into major detail the syntax and every capability of each library. 
-For more information on how to use the seaborn library, visit [Seaborn Function Overview](https://seaborn.pydata.org/tutorial/function_overview.html?utm_source=chatgpt.com). 
-For more information on how to use the matplot library, visit [Matplotlib Function Overview](https://matplotlib.org/stable/tutorials/index).
+For more information on how to use the seaborn library, visit [Seaborn Tutorial](https://seaborn.pydata.org/tutorial/function_overview.html?utm_source=chatgpt.com). 
+For more information on how to use the matplot library, visit [Matplotlib Tutorial](https://matplotlib.org/stable/tutorials/index).
 
 ## Characteristics
 ### Matplotlib

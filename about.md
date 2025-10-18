@@ -4,19 +4,18 @@ title: "About Me"
 
 ## Background
 
-Write a brief introduction about yourself here. Include:
+Hi! My name is Ridge Atwood, and I am currently a junior at Brigham Young University majoring in Statistics with an emphasis in Data Science. I plan to enter the BYU Master’s Program in Data Science in Fall 2026.
 
-- I'm currently a junior at Brigham Young University studying Statistics with an emphasis in Data Science planning to enter the Master's Program in Fall 2026.
-- My interest in data scientist stems from my love for problem solving and working with data to find solutions, and I also had an interest in computer science. I discovered data science as a field that combines both of these interests through of mentor of mine.
-- My goal is to work for a financial company to use data analysis to help make better financial decisions.
-- United States Powerlifting R Project
+My passion for data science comes from my love of problem solving, working with data to uncover insights, and an early interest in computer science. A mentor introduced me to data science as the perfect combination of both fields, and I’ve been excited about it ever since.
+
+My career goal is to work in the financial industry, using data-driven decision making to improve financial strategies and outcomes.
 
 ## Education
 
-- **Statistics: Emphasis in Data Science** - Brigham Young University, 2026(Expected)
-- **Relevant Coursework**: Statistics, Data Analysis, Programming, etc.
+- **Statistics: Emphasis in Data Science** - Brigham Young University, 2026(Expected) Intended M.S. in Data Science 2028(Expected)
+- **Relevant Coursework**: Statistical Inference, Data Wrangling, Machine Learning, Programming in Python and R, Database Systems
 
-## Skills & Interests
+## Skills & Experience
 
 ### Technical Skills
 - **Programming**: Python
@@ -25,23 +24,26 @@ Write a brief introduction about yourself here. Include:
 - **Machine Learning**: Scikit-learn
 - **Tools**: Jupyter Notebooks, Git/GitHub
 
-### Areas of Interest
-- I'm interested in financial data analysis, AI and machine learning.
-- I'm also interested in predictive modeling and data visualization.
+### Experience
+**Junior Programmer – PAIC Solar**
+- Built dashboards and worked with SQL to analyze operational data
+- Collaborated with team members to improve internal tools
+ **Teaching Assistant – STAT 121 (Intro to Data Analysis)**
+- Explained statistical concepts clearly to students
+- Helped students with coding and data interpretation
+**Volunteer Leadership – Mission in Newport Beach, CA**
+- Led teams and coordinated large-scale operations
+- Developed communication, organization, and mentorship skills
 
-## Goals
-
-Describe what you hope to achieve through your data science journey:
-
-- Learn advanced machine learning techniques and work on real-world projects
-- Manage a team of other data scientists
-- Make an AI model capable of accurately predicting stock prices
+## Get to Know Me
+- **Hobbies**: Reading fantasy novels, pickleball, spikeball, and volleyball
+- **Random Fact**: I've gone swimming with whale sharks before.
 
 ## Contact
 
 - **Email**: atwoodridge@gmail.com
 - **GitHub**: [github.com/Ridge42](https://github.com/Ridge42)
-- **LinkedIn**: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+- **LinkedIn**: [linkedin.com/in/ridge-atwood](https://www.linkedin.com/in/ridge-atwood-4264a8300/)
 
 ---
 

@@ -1,0 +1,85 @@
+---
+title: "Movie Rankings by Genre "
+format:
+    html:
+        code-fold: true
+jupyter: python3
+---
+
+## **Introduction**
+
+Movies are a major part of popular culture, influencing trends, societal norms, and entertainment preferences. Understanding how different genres perform in terms of ratings and popularity over time can provide insights into audience preferences and the evolution of film trends. This project explores genre trends in movies released from 2016 to 2025, highlighting which genres are most common, highest rated by movie critics, and most popular by the public. It's intereting to see if genres that were popular 10 years ago are still popular now. It's also interesting to see which genres have prevailed for the last 10 years and see what that reflects about our society's values, interests, and cultures. This data is most applicable to help filmmakers, analytics, or movie enthusiasts to understand audience interests that may impact the genres movies will have in the future.
+
+## **Motivating Question**
+
+The main questions this project addresses are:
+
+- How has genre popularity changed over the last 10+ years?
+- Which genres tend to receive the highest average ratings or highest popularity each year?
+
+
+## **Ethical Considerations / Data Gathering**
+The data was sourced from TMDb (The Movie Database) API, which allows me to publicly access movie metadata such as rating, genre, year released, popularity, and more. With TMDb, you're allowed to use the API to access their data and use it as long as you gi ve them credit by putting their logo on your website or page if post information you got from their data. You are also not allowed to use their public API for commercial use. Using the API, there was no need to scrape data from their website, which would've been against their terms of use anyways. If you're gathering a large amount of data, API requests should have a *time.sleep(num)* to respect TMDb rate limits to avoid server overload. Becuase all the data collected is aggregate metadata, there is no personal or sensitive information used. All these terms and policies regarding the use of TMDb's API and data can be found at [**TMDb API**](https://developer.themoviedb.org/docs/getting-started). 
+
+
+## **Steps to Get the Data**
+
+- Sign up for a free TMDb account 
+- Request an API key
+- Use Python with the requests library to query the API.
+- Collect relevant movie fields including:
+    - Title
+    - Release date
+    - Vote average (rating)
+    - Vote count
+    - Popularity
+    - Movie ID
+- To get genres of the movies:
+    - Use genre API to get the different genres and IDs for movies
+    - Map the genre to the movie ID 
+- Loop through multiple pages of results to gather sufficient observations 
+- Filter movies to include only those with at least 50 votes to focus on more reliable data.
+- Most movies have multiple genres so make each genre its own variable and set as True or False
+- Convert release dates to datetime and extract the year for analysis.
+- Aggregate genres using one-hot columns for counting and calculating average ratings or popularity.
+
+## **Exploratory Data Analysis (EDA) Highlights**
+
+I was most interested in the genres that had the highest average ranking, but I wanted to first see the genres that were produced the most.
+
+Below is a proportion table that shows the top 5 most common genres for both 2025 and from all our data and the percentage of movies that had these genres. You might be confused that the percentages don't add up to 100%, but remember that each movie has multiple genres, so the percentages are only out of the total, not discounting other genres. There is overlap with the different genres and movies counted in each one. There are a total of 10,000 movies in the sample.
+
+| Genre    | 2025 Movies           | Movies since 2016           |
+|----------|-----------------------|-----------------------------|
+| Thriller | 37%                   | 24%                         |
+| Drama    | 34%                   | 42%                         |
+| Comedy   | 33%                   | 33%                         |
+| Action   | 30%                   | 19%                         |
+| Horror   | 18%                   | 16%                         |
+
+For 2025, the thriller genre has been the most common genre, with 37% of movies (totaling 139 movies) having this genre. Drama follows up behind it with 34% (totaling 125 movies). Both of these genres are often accompanies with each other and other genres. For example, most romance movies also have drama. Action and horror movies will often include thriller as well, and those genres are also in the top 5.
+
+Looking at all the movies in the last 10 years, it seems that drama was also a very popular genre, being at 42% (totaling 4202 movies), while action and thrillers weren't as popular. This gives us some insights as to today's culture where people have lower attention spans which may be a leading cause to action and thriller movies being more popular.
+
+### **Genres by Ranking**
+Because there were so many thriller and drama movies, I expected those genres to be the highest ranking movies. However, genres that weren't even on the top 5 for amount of movies produced with that genre were ranked the highest. For 2025, the animation genre had the highest average ratings (7.28 avg rating). Since 2016, documentaries had the highest average rating (7.11 avg rating). The documentary rating really surprised me because in my personal life I've rarely watched documentaries and don't know many people who enjoy watching documentaries. The ratings are a weighted average of votes on the movie, so it may be that only people who are interested in documentaries are voting on them, inflating that score. 
+
+### **Time Series Plot**
+In order to look at how the highest rated genre at changed over time, I made a time series plot showing this.
+![Movie Time Series Plot](images/movie_time.png)
+
+### **Genres by Popularity**
+In order to see if the ratings were inflated, I also looked at the popularity of different genres. Popularity is determined by the total number of page views on the site for each movie so it may not completely represent if people are enjoying the movie, but that many people are watching the movie. Popularity is usually skewed towards newer movies since most people only visit IMDb to read summaries, reviews, and post reviews for new movies. Because of this, I will only look at genre popularity for movies released in 2025. Looking at popularity, I got different results from what rankings show. The fantasy genre is the most popular (54.7 avg) while the documentary genre is the least popular (2.3). This reinforces my belief that the documentary genre most likely has the highest average rating because the majority of people who are voting for the ranking of documentaries enjoy watching them.
+
+## **Summary**
+From the analysis that I was able to do, I was able to find that the current most popular genres are most likely fantasy and animation. These genres have been producing high rated movies is the last couple of years. This can be due to the continual rise in digital imaging, allowing for better animation. This makes the movies easier to create and better to watch as well. Fantasy has been a popular genre, which is unsuprising considering the widespread popular movies since 2016 such as the Avengers movies. Just looking at highest rated movies on average wasn't very helpful as it could be extremely skewed with low view counts but high ratings. The most useful was to compare ratings and popularity to see what genres the fans were enjoying. These were fantasy and animation. Looking at the proportion table and count of movies was useful to see what genres Hollywood wanted to focus on and wanted to produce. We saw that within the last 10 years, there has been an increase in the percentage of movies that are considered action and thrillers, showcasing today's culture and interest in fast-paced movies.
+
+## **Additional Information**
+- [**TMDb (The Movie Database) API Documentation**](https://developer.themoviedb.org/docs) – Learn how to access and use TMDb’s public movie data.  
+- [**TMDb Terms of Use**](https://www.themoviedb.org/terms-of-use) – Review TMDb’s data usage policy and attribution requirements.  
+- [**Pandas Documentation**](https://pandas.pydata.org/docs/) – For data cleaning, transformation, and aggregation in Python.  
+- [**Matplotlib Documentation**](https://matplotlib.org/stable/contents.html) – For creating and saving data visualizations.   
+- [**Kaggle Movie Datasets**](https://www.kaggle.com/datasets) – You can look here for datasets similar to this.
+
+## **GitHub Repository**
+You can view my code for this on my [**Github**](https://github.com/Ridge42/Data_Aquisition#)

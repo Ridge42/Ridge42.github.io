@@ -1,73 +1,38 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to My Data Science Portfolio",
+    "objectID": "manga_blog.html",
+    "href": "manga_blog.html",
+    "title": "Finding the Popular Manga",
     "section": "",
-    "text": "Welcome to my data science portfolio! This site shows my journey learning data science and analytics. Here you’ll find projects that demonstrate what I’ve learned and discovered.\n\n\nThis portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\nI built this site using Quarto and host it on GitHub Pages.\n\n\n\n\nProgramming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data\n\n\n\n\n\n\n\nLearn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
+    "text": "Manga and manhwa have exploded in global popularity over the past decade, reaching audiences far beyond Japan and Korea. Platforms like MangaDex, Webtoon, and MyAnimeList host thousands of series across every imaginable genre, from fantasy epics to slice-of-life romances. As a fan myself, I’ve often wondered why certain series become massively popular while others—sometimes with similar art or storytelling—barely get noticed.\nThis project explores the data behind that question. By gathering information on ratings, number of followers, genres, and other characteristics of manga and manhwa series, I aim to better understand what factors might be associated with a series’ popularity or critical reception.\nThis topic is both interesting and data-rich—it allows for real-world data collection through APIs and encourages questions that connect art, culture, and statistics."
   },
   {
-    "objectID": "index.html#about-this-portfolio",
-    "href": "index.html#about-this-portfolio",
-    "title": "Welcome to My Data Science Portfolio",
+    "objectID": "manga_blog.html#introduction",
+    "href": "manga_blog.html#introduction",
+    "title": "Finding the Popular Manga",
     "section": "",
-    "text": "This portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\nI built this site using Quarto and host it on GitHub Pages."
+    "text": "Manga and manhwa have exploded in global popularity over the past decade, reaching audiences far beyond Japan and Korea. Platforms like MangaDex, Webtoon, and MyAnimeList host thousands of series across every imaginable genre, from fantasy epics to slice-of-life romances. As a fan myself, I’ve often wondered why certain series become massively popular while others—sometimes with similar art or storytelling—barely get noticed.\nThis project explores the data behind that question. By gathering information on ratings, number of followers, genres, and other characteristics of manga and manhwa series, I aim to better understand what factors might be associated with a series’ popularity or critical reception.\nThis topic is both interesting and data-rich—it allows for real-world data collection through APIs and encourages questions that connect art, culture, and statistics."
   },
   {
-    "objectID": "index.html#skills-im-learning",
-    "href": "index.html#skills-im-learning",
-    "title": "Welcome to My Data Science Portfolio",
-    "section": "",
-    "text": "Programming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data"
+    "objectID": "manga_blog.html#motivating-question",
+    "href": "manga_blog.html#motivating-question",
+    "title": "Finding the Popular Manga",
+    "section": "Motivating Question",
+    "text": "Motivating Question\nWhat features of a manga or manhwa are most strongly associated with its popularity and rating?\nSpecifically, I hope to explore whether characteristics such as the number of chapters, publication status (ongoing or completed), or genre variety play a role in how well a series is received by readers.\nThis question connects nicely to statistical analysis techniques—correlation, regression, and visualization—and allows for a creative but data-driven approach to understanding fan behavior and storytelling trends."
   },
   {
-    "objectID": "index.html#my-projects",
-    "href": "index.html#my-projects",
-    "title": "Welcome to My Data Science Portfolio",
-    "section": "",
-    "text": "Learn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
+    "objectID": "manga_blog.html#ethical-considerations-and-good-scraping-practice",
+    "href": "manga_blog.html#ethical-considerations-and-good-scraping-practice",
+    "title": "Finding the Popular Manga",
+    "section": "Ethical Considerations and Good Scraping Practice",
+    "text": "Ethical Considerations and Good Scraping Practice\nBefore gathering any data, I reviewed the MangaDex API documentation and confirmed that the site explicitly provides public access for metadata queries under a permissive license. The API is designed for developers and researchers to retrieve information about manga titles, tags, authors, and ratings, so no scraping of copyrighted text or images was necessary.\nI also followed general ethical web-scraping practices, including:\nRespecting rate limits and adding time delays between requests.\nUsing a descriptive user-agent header to identify my script.\nCollecting only publicly available metadata (no private or user-specific data).\nAvoiding excessive or repeated requests that could burden the site’s servers.\nBecause the API data is public and intended for third-party use, this project complies with ethical data-collection standards."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
-    "section": "",
-    "text": "Write a brief introduction about yourself here. Include:\n\nI’m currently a junior at Brigham Young University studying Statistics with an emphasis in Data Science planning to enter the Master’s Program in Fall 2026.\nMy interest in data scientist stems from my love for problem solving and working with data to find solutions, and I also had an interest in computer science. I discovered data science as a field that combines both of these interests through of mentor of mine.\nMy goal is to work for a financial company to use data analysis to help make better financial decisions.\nUnited States Powerlifting R Project"
-  },
-  {
-    "objectID": "about.html#background",
-    "href": "about.html#background",
-    "title": "About Me",
-    "section": "",
-    "text": "Write a brief introduction about yourself here. Include:\n\nI’m currently a junior at Brigham Young University studying Statistics with an emphasis in Data Science planning to enter the Master’s Program in Fall 2026.\nMy interest in data scientist stems from my love for problem solving and working with data to find solutions, and I also had an interest in computer science. I discovered data science as a field that combines both of these interests through of mentor of mine.\nMy goal is to work for a financial company to use data analysis to help make better financial decisions.\nUnited States Powerlifting R Project"
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About Me",
-    "section": "Education",
-    "text": "Education\n\nStatistics: Emphasis in Data Science - Brigham Young University, 2026(Expected)\nRelevant Coursework: Statistics, Data Analysis, Programming, etc."
-  },
-  {
-    "objectID": "about.html#skills-interests",
-    "href": "about.html#skills-interests",
-    "title": "About Me",
-    "section": "Skills & Interests",
-    "text": "Skills & Interests\n\nTechnical Skills\n\nProgramming: Python\nData Analysis: Pandas, NumPy\nVisualization: Matplotlib, Seaborn\nMachine Learning: Scikit-learn\nTools: Jupyter Notebooks, Git/GitHub\n\n\n\nAreas of Interest\n\nI’m interested in financial data analysis, AI and machine learning.\nI’m also interested in predictive modeling and data visualization."
-  },
-  {
-    "objectID": "about.html#goals",
-    "href": "about.html#goals",
-    "title": "About Me",
-    "section": "Goals",
-    "text": "Goals\nDescribe what you hope to achieve through your data science journey:\n\nLearn advanced machine learning techniques and work on real-world projects\nManage a team of other data scientists\nMake an AI model capable of accurately predicting stock prices"
-  },
-  {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
-    "title": "About Me",
-    "section": "Contact",
-    "text": "Contact\n\nEmail: atwoodridge@gmail.com\nGitHub: github.com/Ridge42\nLinkedIn: linkedin.com/in/your-profile\n\n\nThis portfolio showcases my learning progress and projects completed during my data science studies."
+    "objectID": "manga_blog.html#summary-of-data-collection-process",
+    "href": "manga_blog.html#summary-of-data-collection-process",
+    "title": "Finding the Popular Manga",
+    "section": "Summary of Data Collection Process",
+    "text": "Summary of Data Collection Process\nTo collect my data, I used the MangaDex REST API, which returns JSON-formatted data for manga series. Getting started required just a few lines of Python using the requests library. The overall process can be summarized in four main steps:\nIdentify an API endpoint. MangaDex provides endpoints like /manga to retrieve metadata for many titles at once. The official documentation lists query parameters (such as genre, publication status, and rating order) that make it easy to pull a wide variety of series.\nMake API calls with requests. In Python, I used:\nimport requests\n\nresponse = requests.get(\"https://api.mangadex.org/manga\", params={\"limit\": 100})\ndata = response.json()\nThis returns a structured dictionary containing details for each series, including title, description, tags, publication status, and relationships (e.g., authors).\nExtract and clean relevant fields. Each manga entry contains nested attributes, so I parsed out features such as:\nTitle\nAverage rating\nNumber of followers\nStatus (ongoing/completed)\nGenres/tags\nYear started These variables form the backbone of my dataset.\nStore and combine results. I looped through multiple API pages until I had well over 200 unique manga and manhwa entries. The cleaned data was then stored in a CSV file for later analysis using pandas.\nFor anyone wanting to try something similar, the MangaDex API is an excellent place to start. It’s free, openly documented, and returns rich metadata with minimal setup."
   },
   {
     "objectID": "blog.html",
@@ -103,5 +68,138 @@
     "title": "Matplotlib vs. Seaborn: Same Plot, Different Styles",
     "section": "Detailed Graphs",
     "text": "Detailed Graphs\n\nDetailed Matplotlib Graph\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\ntips = sns.load_dataset(\"tips\")\n\n# Increase figure size\nplt.figure(figsize=(12, 7))\n\n# Get unique days for grouping\ndays = tips[\"day\"].unique()\ncolors = plt.get_cmap(\"tab10\").colors  # Color palette similar to Seaborn\n\n# Plot each day separately\nfor i, day in enumerate(days):\n    day_data = tips[tips[\"day\"] == day]\n    plt.plot(\n        day_data[\"total_bill\"], \n        day_data[\"tip\"], \n        linestyle=\"--\",     # Dashed line\n        marker=\"o\",         # Marker for each point\n        color=colors[i % len(colors)], #assigns colors to the data\n        label=day\n    )\n\n# Add title and labels\nplt.title(\"Tips by Total Bill (Grouped by Day)\", fontsize=16)\nplt.xlabel(\"Total Bill ($)\", fontsize=14)\nplt.ylabel(\"Tip ($)\", fontsize=14)\n\n# Add grid\nplt.grid(True, linestyle=\"--\", linewidth=0.8)\n\n# Customize legend\nplt.legend(title=\"Day of Week\", fontsize=12, title_fontsize=13)\nplt.show()\n\n\n\nDetailed matplotlib graph\n\n\n\n\nDetailed Seaborn graph\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Load seaborn's built-in dataset\ntips = sns.load_dataset(\"tips\")\n\n# Set Seaborn style and context\nsns.set_style(\"darkgrid\")       # Dark grid background\nsns.set_context(\"talk\")         # Slightly larger labels for presentation\n\n# Increase figure size\nplt.figure(figsize=(12, 7))\n\nsns.lineplot(\n    data=tips,\n    x=\"total_bill\",\n    y=\"tip\",\n    hue=\"day\",            # Separate lines by day of week\n    style=\"day\",          # Different marker for each day\n    markers=True,         # Show marker for each point\n    linestyle=\"--\",       # Dashed lines\n    palette=\"tab10\",      # Custom color palette\n    ci=95                 # 95% confidence interval shading\n)\nplt.title(\"Tips by Total Bill (Grouped by Day)\", fontsize=16)\nplt.xlabel(\"Total Bill ($)\", fontsize=14)\nplt.ylabel(\"Tip ($)\", fontsize=14)\nplt.legend(title=\"Day of Week\", fontsize=12, title_fontsize=13)\nplt.show()\n\n\n\nDetailed seaborn graph\n\n\n\nDetailed Graph Comparison\nThese graphs may not be pretty, but they were made to show the main differences between the matplotlib and the seaborn libraries. The tips dataset is a dataset built into the seaborn library so we will use it for both graphs, but for the matplotlib graph, we will still only use functions from the matplotlib library. The main bits of code that the matplotlib library implemented to have the same graph as the seaborn library plot were the plt.get_camp(), and the for loop going through the different information. With this dataset, the matplotlib library needed the for loop seperate lines for each day of the week. The for loop splits the data by day, plots each subset with its own color, and manually adds a line. Seaborn is really covenient here because it does all this automatically with the hue function. Seaborn will also automatically choose styles based off of the hue function. We can specify the line type here to make it the same as the matplotlib plot, but without it, it would just choose one that it thinks looks the best. Seaborn also has the set_style() function that allows us to change the look of the entire plot. With darkgrid it gives you a dark background grid with white lines. Seaborn is built on matplotlib so it does still use the same method of assigning titles and axes as the matplotlib library.\n\n\n\nWhich One Is Better?\nThat really depends on what you want to do and the data you are graphing. If you want to customize every little thing in the graph, plotting functions such as cos or sin, or using very large datasets, matplotlib library is usually better. Seaborn is typically better if you just want a quick look at the data since it automatically adds colors and organizes the data on the graph in a neat way. It’s also more useful if you’re using a pandas dataframe and want statistical graphs that are beautiful. I invite you all to try out the matplotlib and seaborn library by asking AI for a dataset you can use to use the different features to see which one you prefer."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Hi! My name is Ridge Atwood, and I am currently a junior at Brigham Young University majoring in Statistics with an emphasis in Data Science. I plan to enter the BYU Master’s Program in Data Science in Fall 2026.\nMy passion for data science comes from my love of problem solving, working with data to uncover insights, and an early interest in computer science. A mentor introduced me to data science as the perfect combination of both fields, and I’ve been excited about it ever since.\nMy career goal is to work in the financial industry, using data-driven decision making to improve financial strategies and outcomes."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About Me",
+    "section": "",
+    "text": "Hi! My name is Ridge Atwood, and I am currently a junior at Brigham Young University majoring in Statistics with an emphasis in Data Science. I plan to enter the BYU Master’s Program in Data Science in Fall 2026.\nMy passion for data science comes from my love of problem solving, working with data to uncover insights, and an early interest in computer science. A mentor introduced me to data science as the perfect combination of both fields, and I’ve been excited about it ever since.\nMy career goal is to work in the financial industry, using data-driven decision making to improve financial strategies and outcomes."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n\nStatistics: Emphasis in Data Science - Brigham Young University, 2026(Expected) Intended M.S. in Data Science 2028(Expected)\nRelevant Coursework: Statistical Inference, Data Wrangling, Machine Learning, Programming in Python and R, Database Systems"
+  },
+  {
+    "objectID": "about.html#skills-experience",
+    "href": "about.html#skills-experience",
+    "title": "About Me",
+    "section": "Skills & Experience",
+    "text": "Skills & Experience\n\nTechnical Skills\n\nProgramming: Python\nData Analysis: Pandas, NumPy\nVisualization: Matplotlib, Seaborn\nMachine Learning: Scikit-learn\nTools: Jupyter Notebooks, Git/GitHub\n\n\n\nExperience\nJunior Programmer – PAIC Solar - Built dashboards and worked with SQL to analyze operational data - Collaborated with team members to improve internal tools Teaching Assistant – STAT 121 (Intro to Data Analysis) - Explained statistical concepts clearly to students - Helped students with coding and data interpretation Volunteer Leadership – Mission in Newport Beach, CA - Led teams and coordinated large-scale operations - Developed communication, organization, and mentorship skills"
+  },
+  {
+    "objectID": "about.html#get-to-know-me",
+    "href": "about.html#get-to-know-me",
+    "title": "About Me",
+    "section": "Get to Know Me",
+    "text": "Get to Know Me\n\nHobbies: Reading fantasy novels, pickleball, spikeball, and volleyball\nRandom Fact: I’ve gone swimming with whale sharks before."
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About Me",
+    "section": "Contact",
+    "text": "Contact\n\nEmail: atwoodridge@gmail.com\nGitHub: github.com/Ridge42\nLinkedIn: linkedin.com/in/ridge-atwood\n\n\nThis portfolio showcases my learning progress and projects completed during my data science studies."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "Welcome to my data science portfolio! This site shows my journey learning data science and analytics. Here you’ll find projects that demonstrate what I’ve learned and discovered.\n\n\nThis portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\nI built this site using Quarto and host it on GitHub Pages.\n\n\n\n\nProgramming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data\n\n\n\n\n\n\n\nLearn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
+  },
+  {
+    "objectID": "index.html#about-this-portfolio",
+    "href": "index.html#about-this-portfolio",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "This portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\nI built this site using Quarto and host it on GitHub Pages."
+  },
+  {
+    "objectID": "index.html#skills-im-learning",
+    "href": "index.html#skills-im-learning",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "Programming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data"
+  },
+  {
+    "objectID": "index.html#my-projects",
+    "href": "index.html#my-projects",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "Learn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
+  },
+  {
+    "objectID": "movie_blog.html",
+    "href": "movie_blog.html",
+    "title": "Movie Rankings by Genre",
+    "section": "",
+    "text": "Movies are a major part of popular culture, influencing trends, societal norms, and entertainment preferences. Understanding how different genres perform in terms of ratings and popularity over time can provide insights into audience preferences and the evolution of film trends. This project explores genre trends in movies released from 2016 to 2025, highlighting which genres are most common, highest rated by movie critics, and most popular by the public. It’s intereting to see if genres that were popular 10 years ago are still popular now. It’s also interesting to see which genres have prevailed for the last 10 years and see what that reflects about our society’s values, interests, and cultures. This data is most applicable to help filmmakers, analytics, or movie enthusiasts to understand audience interests that may impact the genres movies will have in the future."
+  },
+  {
+    "objectID": "movie_blog.html#introduction",
+    "href": "movie_blog.html#introduction",
+    "title": "Movie Rankings by Genre",
+    "section": "",
+    "text": "Movies are a major part of popular culture, influencing trends, societal norms, and entertainment preferences. Understanding how different genres perform in terms of ratings and popularity over time can provide insights into audience preferences and the evolution of film trends. This project explores genre trends in movies released from 2016 to 2025, highlighting which genres are most common, highest rated by movie critics, and most popular by the public. It’s intereting to see if genres that were popular 10 years ago are still popular now. It’s also interesting to see which genres have prevailed for the last 10 years and see what that reflects about our society’s values, interests, and cultures. This data is most applicable to help filmmakers, analytics, or movie enthusiasts to understand audience interests that may impact the genres movies will have in the future."
+  },
+  {
+    "objectID": "movie_blog.html#motivating-question",
+    "href": "movie_blog.html#motivating-question",
+    "title": "Movie Rankings by Genre",
+    "section": "Motivating Question",
+    "text": "Motivating Question\nThe main questions this project addresses are:\n\nHow has genre popularity changed over the last 10+ years?\nWhich genres tend to receive the highest average ratings or highest popularity each year?"
+  },
+  {
+    "objectID": "movie_blog.html#ethical-considerations-data-gathering",
+    "href": "movie_blog.html#ethical-considerations-data-gathering",
+    "title": "Movie Rankings by Genre",
+    "section": "Ethical Considerations / Data Gathering",
+    "text": "Ethical Considerations / Data Gathering\nThe data was sourced from TMDb (The Movie Database) API, which allows me to publicly access movie metadata such as rating, genre, year released, popularity, and more. With TMDb, you’re allowed to use the API to access their data and use it as long as you gi ve them credit by putting their logo on your website or page if post information you got from their data. You are also not allowed to use their public API for commercial use. Using the API, there was no need to scrape data from their website, which would’ve been against their terms of use anyways. If you’re gathering a large amount of data, API requests should have a time.sleep(num) to respect TMDb rate limits to avoid server overload. Becuase all the data collected is aggregate metadata, there is no personal or sensitive information used. All these terms and policies regarding the use of TMDb’s API and data can be found at TMDb API."
+  },
+  {
+    "objectID": "movie_blog.html#steps-to-get-the-data",
+    "href": "movie_blog.html#steps-to-get-the-data",
+    "title": "Movie Rankings by Genre",
+    "section": "Steps to Get the Data",
+    "text": "Steps to Get the Data\n\nSign up for a free TMDb account\nRequest an API key\nUse Python with the requests library to query the API.\nCollect relevant movie fields including:\n\nTitle\nRelease date\nVote average (rating)\nVote count\nPopularity\nMovie ID\n\nTo get genres of the movies:\n\nUse genre API to get the different genres and IDs for movies\nMap the genre to the movie ID\n\nLoop through multiple pages of results to gather sufficient observations\nFilter movies to include only those with at least 50 votes to focus on more reliable data.\nMost movies have multiple genres so make each genre its own variable and set as True or False\nConvert release dates to datetime and extract the year for analysis.\nAggregate genres using one-hot columns for counting and calculating average ratings or popularity."
+  },
+  {
+    "objectID": "movie_blog.html#exploratory-data-analysis-eda-highlights",
+    "href": "movie_blog.html#exploratory-data-analysis-eda-highlights",
+    "title": "Movie Rankings by Genre",
+    "section": "Exploratory Data Analysis (EDA) Highlights",
+    "text": "Exploratory Data Analysis (EDA) Highlights\nI was most interested in the genres that had the highest average ranking, but I wanted to first see the genres that were produced the most.\nBelow is a proportion table that shows the top 5 most common genres for both 2025 and from all our data and the percentage of movies that had these genres. You might be confused that the percentages don’t add up to 100%, but remember that each movie has multiple genres, so the percentages are only out of the total, not discounting other genres. There is overlap with the different genres and movies counted in each one. There are a total of 10,000 movies in the sample.\n\n\n\nGenre\n2025 Movies\nMovies since 2016\n\n\n\n\nThriller\n37%\n24%\n\n\nDrama\n34%\n42%\n\n\nComedy\n33%\n33%\n\n\nAction\n30%\n19%\n\n\nHorror\n18%\n16%\n\n\n\nFor 2025, the thriller genre has been the most common genre, with 37% of movies (totaling 139 movies) having this genre. Drama follows up behind it with 34% (totaling 125 movies). Both of these genres are often accompanies with each other and other genres. For example, most romance movies also have drama. Action and horror movies will often include thriller as well, and those genres are also in the top 5.\nLooking at all the movies in the last 10 years, it seems that drama was also a very popular genre, being at 42% (totaling 4202 movies), while action and thrillers weren’t as popular. This gives us some insights as to today’s culture where people have lower attention spans which may be a leading cause to action and thriller movies being more popular.\n\nGenres by Ranking\nBecause there were so many thriller and drama movies, I expected those genres to be the highest ranking movies. However, genres that weren’t even on the top 5 for amount of movies produced with that genre were ranked the highest. For 2025, the animation genre had the highest average ratings (7.28 avg rating). Since 2017, documentaries had the highest average rating (7.11 avg rating). The documentary rating really surprised me because in my personal life I’ve rarely watched documentaries and don’t know many people who enjoy watching documentaries. The ratings are a weighted average of votes on the movie, so it may be that only people who are interested in documentaries are voting on them, inflating that score.\n\n\nTime Series Plot\nIn order to look at how the highest rated genre at changed over time, I made a time series plot showing this. \n\n\nGenres by Popularity\nIn order to see if the ratings were inflated, I also looked at the popularity of different genres. Popularity is determined by the total number of page views on the site for each movie so it may not completely represent if people are enjoying the movie, but that many people are watching the movie. Popularity is usually skewed towards newer movies since most people only visit IMDb to read summaries, reviews, and post reviews for new movies. Because of this, I will only look at genre popularity for movies released in 2025. Looking at popularity, I got different results from what rankings show. The fantasy genre is the most popular (54.7 avg) while the documentary genre is the least popular (2.3). This reinforces my belief that the documentary genre most likely has the highest average rating because the majority of people who are voting for the ranking of documentaries enjoy watching them."
+  },
+  {
+    "objectID": "movie_blog.html#summary",
+    "href": "movie_blog.html#summary",
+    "title": "Movie Rankings by Genre",
+    "section": "Summary",
+    "text": "Summary"
+  },
+  {
+    "objectID": "movie_blog.html#additional-information",
+    "href": "movie_blog.html#additional-information",
+    "title": "Movie Rankings by Genre",
+    "section": "Additional Information",
+    "text": "Additional Information\n\nTMDb (The Movie Database) API Documentation – Learn how to access and use TMDb’s public movie data.\n\nTMDb Terms of Use – Review TMDb’s data usage policy and attribution requirements.\n\nPandas Documentation – For data cleaning, transformation, and aggregation in Python.\n\nMatplotlib Documentation – For creating and saving data visualizations.\n\nKaggle Movie Datasets – You can look here for datasets similar to this."
+  },
+  {
+    "objectID": "movie_blog.html#github-repository",
+    "href": "movie_blog.html#github-repository",
+    "title": "Movie Rankings by Genre",
+    "section": "GitHub Repository",
+    "text": "GitHub Repository\nYou can view my code for this on my Github"
   }
 ]

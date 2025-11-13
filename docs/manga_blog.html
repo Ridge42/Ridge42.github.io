@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About Me – Ridge Atwood - Data Science Portfolio</title>
+<title>Finding the Popular Manga – Ridge Atwood - Data Science Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -132,7 +132,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
@@ -140,7 +140,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./manga_blog.html"> 
+    <a class="nav-link active" href="./manga_blog.html" aria-current="page"> 
 <span class="menu-text">Data Aquisition</span></a>
   </li>  
 </ul>
@@ -171,15 +171,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
-  <li><a href="#skills-experience" id="toc-skills-experience" class="nav-link" data-scroll-target="#skills-experience">Skills &amp; Experience</a>
-  <ul class="collapse">
-  <li><a href="#technical-skills" id="toc-technical-skills" class="nav-link" data-scroll-target="#technical-skills">Technical Skills</a></li>
-  <li><a href="#experience" id="toc-experience" class="nav-link" data-scroll-target="#experience">Experience</a></li>
-  </ul></li>
-  <li><a href="#get-to-know-me" id="toc-get-to-know-me" class="nav-link" data-scroll-target="#get-to-know-me">Get to Know Me</a></li>
-  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#motivating-question" id="toc-motivating-question" class="nav-link" data-scroll-target="#motivating-question">Motivating Question</a></li>
+  <li><a href="#ethical-considerations-and-good-scraping-practice" id="toc-ethical-considerations-and-good-scraping-practice" class="nav-link" data-scroll-target="#ethical-considerations-and-good-scraping-practice">Ethical Considerations and Good Scraping Practice</a></li>
+  <li><a href="#summary-of-data-collection-process" id="toc-summary-of-data-collection-process" class="nav-link" data-scroll-target="#summary-of-data-collection-process">Summary of Data Collection Process</a></li>
   </ul>
 </nav>
     </div>
@@ -188,7 +183,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">About Me</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Finding the Popular Manga</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -205,52 +200,47 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="background" class="level2">
-<h2 class="anchored" data-anchor-id="background">Background</h2>
-<p>Hi! My name is Ridge Atwood, and I am currently a junior at Brigham Young University majoring in Statistics with an emphasis in Data Science. I plan to enter the BYU Master’s Program in Data Science in Fall 2026.</p>
-<p>My passion for data science comes from my love of problem solving, working with data to uncover insights, and an early interest in computer science. A mentor introduced me to data science as the perfect combination of both fields, and I’ve been excited about it ever since.</p>
-<p>My career goal is to work in the financial industry, using data-driven decision making to improve financial strategies and outcomes.</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Manga and manhwa have exploded in global popularity over the past decade, reaching audiences far beyond Japan and Korea. Platforms like MangaDex, Webtoon, and MyAnimeList host thousands of series across every imaginable genre, from fantasy epics to slice-of-life romances. As a fan myself, I’ve often wondered why certain series become massively popular while others—sometimes with similar art or storytelling—barely get noticed.</p>
+<p>This project explores the data behind that question. By gathering information on ratings, number of followers, genres, and other characteristics of manga and manhwa series, I aim to better understand what factors might be associated with a series’ popularity or critical reception.</p>
+<p>This topic is both interesting and data-rich—it allows for real-world data collection through APIs and encourages questions that connect art, culture, and statistics.</p>
 </section>
-<section id="education" class="level2">
-<h2 class="anchored" data-anchor-id="education">Education</h2>
-<ul>
-<li><strong>Statistics: Emphasis in Data Science</strong> - Brigham Young University, 2026(Expected) Intended M.S. in Data Science 2028(Expected)</li>
-<li><strong>Relevant Coursework</strong>: Statistical Inference, Data Wrangling, Machine Learning, Programming in Python and R, Database Systems</li>
-</ul>
+<section id="motivating-question" class="level2">
+<h2 class="anchored" data-anchor-id="motivating-question">Motivating Question</h2>
+<p>What features of a manga or manhwa are most strongly associated with its popularity and rating?</p>
+<p>Specifically, I hope to explore whether characteristics such as the number of chapters, publication status (ongoing or completed), or genre variety play a role in how well a series is received by readers.</p>
+<p>This question connects nicely to statistical analysis techniques—correlation, regression, and visualization—and allows for a creative but data-driven approach to understanding fan behavior and storytelling trends.</p>
 </section>
-<section id="skills-experience" class="level2">
-<h2 class="anchored" data-anchor-id="skills-experience">Skills &amp; Experience</h2>
-<section id="technical-skills" class="level3">
-<h3 class="anchored" data-anchor-id="technical-skills">Technical Skills</h3>
-<ul>
-<li><strong>Programming</strong>: Python</li>
-<li><strong>Data Analysis</strong>: Pandas, NumPy</li>
-<li><strong>Visualization</strong>: Matplotlib, Seaborn</li>
-<li><strong>Machine Learning</strong>: Scikit-learn</li>
-<li><strong>Tools</strong>: Jupyter Notebooks, Git/GitHub</li>
-</ul>
+<section id="ethical-considerations-and-good-scraping-practice" class="level2">
+<h2 class="anchored" data-anchor-id="ethical-considerations-and-good-scraping-practice">Ethical Considerations and Good Scraping Practice</h2>
+<p>Before gathering any data, I reviewed the MangaDex API documentation and confirmed that the site explicitly provides public access for metadata queries under a permissive license. The API is designed for developers and researchers to retrieve information about manga titles, tags, authors, and ratings, so no scraping of copyrighted text or images was necessary.</p>
+<p>I also followed general ethical web-scraping practices, including:</p>
+<p>Respecting rate limits and adding time delays between requests.</p>
+<p>Using a descriptive user-agent header to identify my script.</p>
+<p>Collecting only publicly available metadata (no private or user-specific data).</p>
+<p>Avoiding excessive or repeated requests that could burden the site’s servers.</p>
+<p>Because the API data is public and intended for third-party use, this project complies with ethical data-collection standards.</p>
 </section>
-<section id="experience" class="level3">
-<h3 class="anchored" data-anchor-id="experience">Experience</h3>
-<p><strong>Junior Programmer – PAIC Solar</strong> - Built dashboards and worked with SQL to analyze operational data - Collaborated with team members to improve internal tools <strong>Teaching Assistant – STAT 121 (Intro to Data Analysis)</strong> - Explained statistical concepts clearly to students - Helped students with coding and data interpretation <strong>Volunteer Leadership – Mission in Newport Beach, CA</strong> - Led teams and coordinated large-scale operations - Developed communication, organization, and mentorship skills</p>
-</section>
-</section>
-<section id="get-to-know-me" class="level2">
-<h2 class="anchored" data-anchor-id="get-to-know-me">Get to Know Me</h2>
-<ul>
-<li><strong>Hobbies</strong>: Reading fantasy novels, pickleball, spikeball, and volleyball</li>
-<li><strong>Random Fact</strong>: I’ve gone swimming with whale sharks before.</li>
-</ul>
-</section>
-<section id="contact" class="level2">
-<h2 class="anchored" data-anchor-id="contact">Contact</h2>
-<ul>
-<li><strong>Email</strong>: atwoodridge@gmail.com</li>
-<li><strong>GitHub</strong>: <a href="https://github.com/Ridge42">github.com/Ridge42</a></li>
-<li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/ridge-atwood-4264a8300/">linkedin.com/in/ridge-atwood</a></li>
-</ul>
-<hr>
-<p><em>This portfolio showcases my learning progress and projects completed during my data science studies.</em></p>
+<section id="summary-of-data-collection-process" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-data-collection-process">Summary of Data Collection Process</h2>
+<p>To collect my data, I used the MangaDex REST API, which returns JSON-formatted data for manga series. Getting started required just a few lines of Python using the requests library. The overall process can be summarized in four main steps:</p>
+<p>Identify an API endpoint. MangaDex provides endpoints like /manga to retrieve metadata for many titles at once. The official documentation lists query parameters (such as genre, publication status, and rating order) that make it easy to pull a wide variety of series.</p>
+<p>Make API calls with requests. In Python, I used:</p>
+<pre class="{python3}"><code>import requests
+
+response = requests.get("https://api.mangadex.org/manga", params={"limit": 100})
+data = response.json()</code></pre>
+<p>This returns a structured dictionary containing details for each series, including title, description, tags, publication status, and relationships (e.g., authors).</p>
+<p>Extract and clean relevant fields. Each manga entry contains nested attributes, so I parsed out features such as:</p>
+<p>Title</p>
+<p>Average rating</p>
+<p>Number of followers</p>
+<p>Status (ongoing/completed)</p>
+<p>Genres/tags</p>
+<p>Year started These variables form the backbone of my dataset.</p>
+<p>Store and combine results. I looped through multiple API pages until I had well over 200 unique manga and manhwa entries. The cleaned data was then stored in a CSV file for later analysis using pandas.</p>
+<p>For anyone wanting to try something similar, the MangaDex API is an excellent place to start. It’s free, openly documented, and returns rich metadata with minimal setup.</p>
 
 
 <!-- -->
@@ -709,56 +699,85 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "About Me"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## Background</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Hi! My name is Ridge Atwood, and I am currently a junior at Brigham Young University majoring in Statistics with an emphasis in Data Science. I plan to enter the BYU Master’s Program in Data Science in Fall 2026.</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>My passion for data science comes from my love of problem solving, working with data to uncover insights, and an early interest in computer science. A mentor introduced me to data science as the perfect combination of both fields, and I’ve been excited about it ever since.</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>My career goal is to work in the financial industry, using data-driven decision making to improve financial strategies and outcomes.</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## Education</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Statistics: Emphasis in Data Science** - Brigham Young University, 2026(Expected) Intended M.S. in Data Science 2028(Expected)</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Relevant Coursework**: Statistical Inference, Data Wrangling, Machine Learning, Programming in Python and R, Database Systems</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">## Skills &amp; Experience</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">### Technical Skills</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Programming**: Python</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Data Analysis**: Pandas, NumPy</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Visualization**: Matplotlib, Seaborn</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Machine Learning**: Scikit-learn</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Tools**: Jupyter Notebooks, Git/GitHub</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">### Experience</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>**Junior Programmer – PAIC Solar**</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Built dashboards and worked with SQL to analyze operational data</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Collaborated with team members to improve internal tools</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a> **Teaching Assistant – STAT 121 (Intro to Data Analysis)**</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Explained statistical concepts clearly to students</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Helped students with coding and data interpretation</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>**Volunteer Leadership – Mission in Newport Beach, CA**</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Led teams and coordinated large-scale operations</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Developed communication, organization, and mentorship skills</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu">## Get to Know Me</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Hobbies**: Reading fantasy novels, pickleball, spikeball, and volleyball</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Random Fact**: I've gone swimming with whale sharks before.</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contact</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Email**: atwoodridge@gmail.com</span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**GitHub**: <span class="co">[</span><span class="ot">github.com/Ridge42</span><span class="co">](https://github.com/Ridge42)</span></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**LinkedIn**: <span class="co">[</span><span class="ot">linkedin.com/in/ridge-atwood</span><span class="co">](https://www.linkedin.com/in/ridge-atwood-4264a8300/)</span></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>*This portfolio showcases my learning progress and projects completed during my data science studies.*</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Finding the Popular Manga"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">    html:</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">        code-fold: true</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="an">jupyter:</span><span class="co"> python3</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>Manga and manhwa have exploded in global popularity over the past decade, reaching audiences far beyond Japan and Korea. Platforms like MangaDex, Webtoon, and MyAnimeList host thousands of series across every imaginable genre, from fantasy epics to slice-of-life romances. As a fan myself, I’ve often wondered why certain series become massively popular while others—sometimes with similar art or storytelling—barely get noticed.</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>This project explores the data behind that question. By gathering information on ratings, number of followers, genres, and other characteristics of manga and manhwa series, I aim to better understand what factors might be associated with a series’ popularity or critical reception.</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>This topic is both interesting and data-rich—it allows for real-world data collection through APIs and encourages questions that connect art, culture, and statistics.</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Motivating Question</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>What features of a manga or manhwa are most strongly associated with its popularity and rating?</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>Specifically, I hope to explore whether characteristics such as the number of chapters, publication status (ongoing or completed), or genre variety play a role in how well a series is received by readers.</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>This question connects nicely to statistical analysis techniques—correlation, regression, and visualization—and allows for a creative but data-driven approach to understanding fan behavior and storytelling trends.</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ethical Considerations and Good Scraping Practice</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>Before gathering any data, I reviewed the MangaDex API documentation and confirmed that the site explicitly provides public access for metadata queries under a permissive license. The API is designed for developers and researchers to retrieve information about manga titles, tags, authors, and ratings, so no scraping of copyrighted text or images was necessary.</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>I also followed general ethical web-scraping practices, including:</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>Respecting rate limits and adding time delays between requests.</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>Using a descriptive user-agent header to identify my script.</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>Collecting only publicly available metadata (no private or user-specific data).</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>Avoiding excessive or repeated requests that could burden the site’s servers.</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>Because the API data is public and intended for third-party use, this project complies with ethical data-collection standards.</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="fu">## Summary of Data Collection Process</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>To collect my data, I used the MangaDex REST API, which returns JSON-formatted data for manga series. Getting started required just a few lines of Python using the requests library. The overall process can be summarized in four main steps:</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>Identify an API endpoint.</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>MangaDex provides endpoints like /manga to retrieve metadata for many titles at once. The official documentation lists query parameters (such as genre, publication status, and rating order) that make it easy to pull a wide variety of series.</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>Make API calls with requests.</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>In Python, I used:</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="in">```{python3}</span></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>response <span class="op">=</span> requests.get(<span class="st">"https://api.mangadex.org/manga"</span>, params<span class="op">=</span>{<span class="st">"limit"</span>: <span class="dv">100</span>})</span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> response.json()</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>This returns a structured dictionary containing details for each series, including title, description, tags, publication status, and relationships (e.g., authors).</span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>Extract and clean relevant fields.</span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>Each manga entry contains nested attributes, so I parsed out features such as:</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>Title</span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>Average rating</span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>Number of followers</span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>Status (ongoing/completed)</span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>Genres/tags</span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>Year started</span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>These variables form the backbone of my dataset.</span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>Store and combine results.</span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>I looped through multiple API pages until I had well over 200 unique manga and manhwa entries. The cleaned data was then stored in a CSV file for later analysis using pandas.</span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>For anyone wanting to try something similar, the MangaDex API is an excellent place to start. It’s free, openly documented, and returns rich metadata with minimal setup.</span>
+</code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

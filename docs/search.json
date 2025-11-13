@@ -1,38 +1,66 @@
 [
   {
-    "objectID": "manga_blog.html",
-    "href": "manga_blog.html",
-    "title": "Finding the Popular Manga",
+    "objectID": "movie_blog.html",
+    "href": "movie_blog.html",
+    "title": "Movie Rankings by Genre",
     "section": "",
-    "text": "Manga and manhwa have exploded in global popularity over the past decade, reaching audiences far beyond Japan and Korea. Platforms like MangaDex, Webtoon, and MyAnimeList host thousands of series across every imaginable genre, from fantasy epics to slice-of-life romances. As a fan myself, I’ve often wondered why certain series become massively popular while others—sometimes with similar art or storytelling—barely get noticed.\nThis project explores the data behind that question. By gathering information on ratings, number of followers, genres, and other characteristics of manga and manhwa series, I aim to better understand what factors might be associated with a series’ popularity or critical reception.\nThis topic is both interesting and data-rich—it allows for real-world data collection through APIs and encourages questions that connect art, culture, and statistics."
+    "text": "Movies are a major part of popular culture, influencing trends, societal norms, and entertainment preferences. Understanding how different genres perform in terms of ratings and popularity over time can provide insights into audience preferences and the evolution of film trends. This project explores genre trends in movies released from 2016 to 2025, highlighting which genres are most common, highest rated by movie critics, and most popular by the public. It’s intereting to see if genres that were popular 10 years ago are still popular now. It’s also interesting to see which genres have prevailed for the last 10 years and see what that reflects about our society’s values, interests, and cultures. This data is most applicable to help filmmakers, analytics, or movie enthusiasts to understand audience interests that may impact the genres movies will have in the future."
   },
   {
-    "objectID": "manga_blog.html#introduction",
-    "href": "manga_blog.html#introduction",
-    "title": "Finding the Popular Manga",
+    "objectID": "movie_blog.html#introduction",
+    "href": "movie_blog.html#introduction",
+    "title": "Movie Rankings by Genre",
     "section": "",
-    "text": "Manga and manhwa have exploded in global popularity over the past decade, reaching audiences far beyond Japan and Korea. Platforms like MangaDex, Webtoon, and MyAnimeList host thousands of series across every imaginable genre, from fantasy epics to slice-of-life romances. As a fan myself, I’ve often wondered why certain series become massively popular while others—sometimes with similar art or storytelling—barely get noticed.\nThis project explores the data behind that question. By gathering information on ratings, number of followers, genres, and other characteristics of manga and manhwa series, I aim to better understand what factors might be associated with a series’ popularity or critical reception.\nThis topic is both interesting and data-rich—it allows for real-world data collection through APIs and encourages questions that connect art, culture, and statistics."
+    "text": "Movies are a major part of popular culture, influencing trends, societal norms, and entertainment preferences. Understanding how different genres perform in terms of ratings and popularity over time can provide insights into audience preferences and the evolution of film trends. This project explores genre trends in movies released from 2016 to 2025, highlighting which genres are most common, highest rated by movie critics, and most popular by the public. It’s intereting to see if genres that were popular 10 years ago are still popular now. It’s also interesting to see which genres have prevailed for the last 10 years and see what that reflects about our society’s values, interests, and cultures. This data is most applicable to help filmmakers, analytics, or movie enthusiasts to understand audience interests that may impact the genres movies will have in the future."
   },
   {
-    "objectID": "manga_blog.html#motivating-question",
-    "href": "manga_blog.html#motivating-question",
-    "title": "Finding the Popular Manga",
+    "objectID": "movie_blog.html#motivating-question",
+    "href": "movie_blog.html#motivating-question",
+    "title": "Movie Rankings by Genre",
     "section": "Motivating Question",
-    "text": "Motivating Question\nWhat features of a manga or manhwa are most strongly associated with its popularity and rating?\nSpecifically, I hope to explore whether characteristics such as the number of chapters, publication status (ongoing or completed), or genre variety play a role in how well a series is received by readers.\nThis question connects nicely to statistical analysis techniques—correlation, regression, and visualization—and allows for a creative but data-driven approach to understanding fan behavior and storytelling trends."
+    "text": "Motivating Question\nThe main questions this project addresses are:\n\nHow has genre popularity changed over the last 10+ years?\nWhich genres tend to receive the highest average ratings or highest popularity each year?"
   },
   {
-    "objectID": "manga_blog.html#ethical-considerations-and-good-scraping-practice",
-    "href": "manga_blog.html#ethical-considerations-and-good-scraping-practice",
-    "title": "Finding the Popular Manga",
-    "section": "Ethical Considerations and Good Scraping Practice",
-    "text": "Ethical Considerations and Good Scraping Practice\nBefore gathering any data, I reviewed the MangaDex API documentation and confirmed that the site explicitly provides public access for metadata queries under a permissive license. The API is designed for developers and researchers to retrieve information about manga titles, tags, authors, and ratings, so no scraping of copyrighted text or images was necessary.\nI also followed general ethical web-scraping practices, including:\nRespecting rate limits and adding time delays between requests.\nUsing a descriptive user-agent header to identify my script.\nCollecting only publicly available metadata (no private or user-specific data).\nAvoiding excessive or repeated requests that could burden the site’s servers.\nBecause the API data is public and intended for third-party use, this project complies with ethical data-collection standards."
+    "objectID": "movie_blog.html#ethical-considerations-data-gathering",
+    "href": "movie_blog.html#ethical-considerations-data-gathering",
+    "title": "Movie Rankings by Genre",
+    "section": "Ethical Considerations / Data Gathering",
+    "text": "Ethical Considerations / Data Gathering\nThe data was sourced from TMDb (The Movie Database) API, which allows me to publicly access movie metadata such as rating, genre, year released, popularity, and more. With TMDb, you’re allowed to use the API to access their data and use it as long as you gi ve them credit by putting their logo on your website or page if post information you got from their data. You are also not allowed to use their public API for commercial use. Using the API, there was no need to scrape data from their website, which would’ve been against their terms of use anyways. If you’re gathering a large amount of data, API requests should have a time.sleep(num) to respect TMDb rate limits to avoid server overload. Becuase all the data collected is aggregate metadata, there is no personal or sensitive information used. All these terms and policies regarding the use of TMDb’s API and data can be found at TMDb API."
   },
   {
-    "objectID": "manga_blog.html#summary-of-data-collection-process",
-    "href": "manga_blog.html#summary-of-data-collection-process",
-    "title": "Finding the Popular Manga",
-    "section": "Summary of Data Collection Process",
-    "text": "Summary of Data Collection Process\nTo collect my data, I used the MangaDex REST API, which returns JSON-formatted data for manga series. Getting started required just a few lines of Python using the requests library. The overall process can be summarized in four main steps:\nIdentify an API endpoint. MangaDex provides endpoints like /manga to retrieve metadata for many titles at once. The official documentation lists query parameters (such as genre, publication status, and rating order) that make it easy to pull a wide variety of series.\nMake API calls with requests. In Python, I used:\nimport requests\n\nresponse = requests.get(\"https://api.mangadex.org/manga\", params={\"limit\": 100})\ndata = response.json()\nThis returns a structured dictionary containing details for each series, including title, description, tags, publication status, and relationships (e.g., authors).\nExtract and clean relevant fields. Each manga entry contains nested attributes, so I parsed out features such as:\nTitle\nAverage rating\nNumber of followers\nStatus (ongoing/completed)\nGenres/tags\nYear started These variables form the backbone of my dataset.\nStore and combine results. I looped through multiple API pages until I had well over 200 unique manga and manhwa entries. The cleaned data was then stored in a CSV file for later analysis using pandas.\nFor anyone wanting to try something similar, the MangaDex API is an excellent place to start. It’s free, openly documented, and returns rich metadata with minimal setup."
+    "objectID": "movie_blog.html#steps-to-get-the-data",
+    "href": "movie_blog.html#steps-to-get-the-data",
+    "title": "Movie Rankings by Genre",
+    "section": "Steps to Get the Data",
+    "text": "Steps to Get the Data\n\nSign up for a free TMDb account\nRequest an API key\nUse Python with the requests library to query the API.\nCollect relevant movie fields including:\n\nTitle\nRelease date\nVote average (rating)\nVote count\nPopularity\nMovie ID\n\nTo get genres of the movies:\n\nUse genre API to get the different genres and IDs for movies\nMap the genre to the movie ID\n\nLoop through multiple pages of results to gather sufficient observations\nFilter movies to include only those with at least 50 votes to focus on more reliable data.\nMost movies have multiple genres so make each genre its own variable and set as True or False\nConvert release dates to datetime and extract the year for analysis.\nAggregate genres using one-hot columns for counting and calculating average ratings or popularity."
+  },
+  {
+    "objectID": "movie_blog.html#exploratory-data-analysis-eda-highlights",
+    "href": "movie_blog.html#exploratory-data-analysis-eda-highlights",
+    "title": "Movie Rankings by Genre",
+    "section": "Exploratory Data Analysis (EDA) Highlights",
+    "text": "Exploratory Data Analysis (EDA) Highlights\nI was most interested in the genres that had the highest average ranking, but I wanted to first see the genres that were produced the most.\nBelow is a proportion table that shows the top 5 most common genres for both 2025 and from all our data and the percentage of movies that had these genres. You might be confused that the percentages don’t add up to 100%, but remember that each movie has multiple genres, so the percentages are only out of the total, not discounting other genres. There is overlap with the different genres and movies counted in each one. There are a total of 10,000 movies in the sample.\n\n\n\nGenre\n2025 Movies\nMovies since 2016\n\n\n\n\nThriller\n37%\n24%\n\n\nDrama\n34%\n42%\n\n\nComedy\n33%\n33%\n\n\nAction\n30%\n19%\n\n\nHorror\n18%\n16%\n\n\n\nFor 2025, the thriller genre has been the most common genre, with 37% of movies (totaling 139 movies) having this genre. Drama follows up behind it with 34% (totaling 125 movies). Both of these genres are often accompanies with each other and other genres. For example, most romance movies also have drama. Action and horror movies will often include thriller as well, and those genres are also in the top 5.\nLooking at all the movies in the last 10 years, it seems that drama was also a very popular genre, being at 42% (totaling 4202 movies), while action and thrillers weren’t as popular. This gives us some insights as to today’s culture where people have lower attention spans which may be a leading cause to action and thriller movies being more popular.\n\nGenres by Ranking\nBecause there were so many thriller and drama movies, I expected those genres to be the highest ranking movies. However, genres that weren’t even on the top 5 for amount of movies produced with that genre were ranked the highest. For 2025, the animation genre had the highest average ratings (7.28 avg rating). Since 2016, documentaries had the highest average rating (7.11 avg rating). The documentary rating really surprised me because in my personal life I’ve rarely watched documentaries and don’t know many people who enjoy watching documentaries. The ratings are a weighted average of votes on the movie, so it may be that only people who are interested in documentaries are voting on them, inflating that score.\n\n\nTime Series Plot\nIn order to look at how the highest rated genre at changed over time, I made a time series plot showing this. \n\n\nGenres by Popularity\nIn order to see if the ratings were inflated, I also looked at the popularity of different genres. Popularity is determined by the total number of page views on the site for each movie so it may not completely represent if people are enjoying the movie, but that many people are watching the movie. Popularity is usually skewed towards newer movies since most people only visit IMDb to read summaries, reviews, and post reviews for new movies. Because of this, I will only look at genre popularity for movies released in 2025. Looking at popularity, I got different results from what rankings show. The fantasy genre is the most popular (54.7 avg) while the documentary genre is the least popular (2.3). This reinforces my belief that the documentary genre most likely has the highest average rating because the majority of people who are voting for the ranking of documentaries enjoy watching them."
+  },
+  {
+    "objectID": "movie_blog.html#summary",
+    "href": "movie_blog.html#summary",
+    "title": "Movie Rankings by Genre",
+    "section": "Summary",
+    "text": "Summary\nFrom the analysis that I was able to do, I was able to find that the current most popular genres are most likely fantasy and animation. These genres have been producing high rated movies is the last couple of years. This can be due to the continual rise in digital imaging, allowing for better animation. This makes the movies easier to create and better to watch as well. Fantasy has been a popular genre, which is unsuprising considering the widespread popular movies since 2016 such as the Avengers movies. Just looking at highest rated movies on average wasn’t very helpful as it could be extremely skewed with low view counts but high ratings. The most useful was to compare ratings and popularity to see what genres the fans were enjoying. These were fantasy and animation. Looking at the proportion table and count of movies was useful to see what genres Hollywood wanted to focus on and wanted to produce. We saw that within the last 10 years, there has been an increase in the percentage of movies that are considered action and thrillers, showcasing today’s culture and interest in fast-paced movies."
+  },
+  {
+    "objectID": "movie_blog.html#additional-information",
+    "href": "movie_blog.html#additional-information",
+    "title": "Movie Rankings by Genre",
+    "section": "Additional Information",
+    "text": "Additional Information\n\nTMDb (The Movie Database) API Documentation – Learn how to access and use TMDb’s public movie data.\n\nTMDb Terms of Use – Review TMDb’s data usage policy and attribution requirements.\n\nPandas Documentation – For data cleaning, transformation, and aggregation in Python.\n\nMatplotlib Documentation – For creating and saving data visualizations.\n\nKaggle Movie Datasets – You can look here for datasets similar to this."
+  },
+  {
+    "objectID": "movie_blog.html#github-repository",
+    "href": "movie_blog.html#github-repository",
+    "title": "Movie Rankings by Genre",
+    "section": "GitHub Repository",
+    "text": "GitHub Repository\nYou can view my code for this on my Github"
   },
   {
     "objectID": "blog.html",
@@ -138,68 +166,5 @@
     "title": "Welcome to My Data Science Portfolio",
     "section": "",
     "text": "Learn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
-  },
-  {
-    "objectID": "movie_blog.html",
-    "href": "movie_blog.html",
-    "title": "Movie Rankings by Genre",
-    "section": "",
-    "text": "Movies are a major part of popular culture, influencing trends, societal norms, and entertainment preferences. Understanding how different genres perform in terms of ratings and popularity over time can provide insights into audience preferences and the evolution of film trends. This project explores genre trends in movies released from 2016 to 2025, highlighting which genres are most common, highest rated by movie critics, and most popular by the public. It’s intereting to see if genres that were popular 10 years ago are still popular now. It’s also interesting to see which genres have prevailed for the last 10 years and see what that reflects about our society’s values, interests, and cultures. This data is most applicable to help filmmakers, analytics, or movie enthusiasts to understand audience interests that may impact the genres movies will have in the future."
-  },
-  {
-    "objectID": "movie_blog.html#introduction",
-    "href": "movie_blog.html#introduction",
-    "title": "Movie Rankings by Genre",
-    "section": "",
-    "text": "Movies are a major part of popular culture, influencing trends, societal norms, and entertainment preferences. Understanding how different genres perform in terms of ratings and popularity over time can provide insights into audience preferences and the evolution of film trends. This project explores genre trends in movies released from 2016 to 2025, highlighting which genres are most common, highest rated by movie critics, and most popular by the public. It’s intereting to see if genres that were popular 10 years ago are still popular now. It’s also interesting to see which genres have prevailed for the last 10 years and see what that reflects about our society’s values, interests, and cultures. This data is most applicable to help filmmakers, analytics, or movie enthusiasts to understand audience interests that may impact the genres movies will have in the future."
-  },
-  {
-    "objectID": "movie_blog.html#motivating-question",
-    "href": "movie_blog.html#motivating-question",
-    "title": "Movie Rankings by Genre",
-    "section": "Motivating Question",
-    "text": "Motivating Question\nThe main questions this project addresses are:\n\nHow has genre popularity changed over the last 10+ years?\nWhich genres tend to receive the highest average ratings or highest popularity each year?"
-  },
-  {
-    "objectID": "movie_blog.html#ethical-considerations-data-gathering",
-    "href": "movie_blog.html#ethical-considerations-data-gathering",
-    "title": "Movie Rankings by Genre",
-    "section": "Ethical Considerations / Data Gathering",
-    "text": "Ethical Considerations / Data Gathering\nThe data was sourced from TMDb (The Movie Database) API, which allows me to publicly access movie metadata such as rating, genre, year released, popularity, and more. With TMDb, you’re allowed to use the API to access their data and use it as long as you gi ve them credit by putting their logo on your website or page if post information you got from their data. You are also not allowed to use their public API for commercial use. Using the API, there was no need to scrape data from their website, which would’ve been against their terms of use anyways. If you’re gathering a large amount of data, API requests should have a time.sleep(num) to respect TMDb rate limits to avoid server overload. Becuase all the data collected is aggregate metadata, there is no personal or sensitive information used. All these terms and policies regarding the use of TMDb’s API and data can be found at TMDb API."
-  },
-  {
-    "objectID": "movie_blog.html#steps-to-get-the-data",
-    "href": "movie_blog.html#steps-to-get-the-data",
-    "title": "Movie Rankings by Genre",
-    "section": "Steps to Get the Data",
-    "text": "Steps to Get the Data\n\nSign up for a free TMDb account\nRequest an API key\nUse Python with the requests library to query the API.\nCollect relevant movie fields including:\n\nTitle\nRelease date\nVote average (rating)\nVote count\nPopularity\nMovie ID\n\nTo get genres of the movies:\n\nUse genre API to get the different genres and IDs for movies\nMap the genre to the movie ID\n\nLoop through multiple pages of results to gather sufficient observations\nFilter movies to include only those with at least 50 votes to focus on more reliable data.\nMost movies have multiple genres so make each genre its own variable and set as True or False\nConvert release dates to datetime and extract the year for analysis.\nAggregate genres using one-hot columns for counting and calculating average ratings or popularity."
-  },
-  {
-    "objectID": "movie_blog.html#exploratory-data-analysis-eda-highlights",
-    "href": "movie_blog.html#exploratory-data-analysis-eda-highlights",
-    "title": "Movie Rankings by Genre",
-    "section": "Exploratory Data Analysis (EDA) Highlights",
-    "text": "Exploratory Data Analysis (EDA) Highlights\nI was most interested in the genres that had the highest average ranking, but I wanted to first see the genres that were produced the most.\nBelow is a proportion table that shows the top 5 most common genres for both 2025 and from all our data and the percentage of movies that had these genres. You might be confused that the percentages don’t add up to 100%, but remember that each movie has multiple genres, so the percentages are only out of the total, not discounting other genres. There is overlap with the different genres and movies counted in each one. There are a total of 10,000 movies in the sample.\n\n\n\nGenre\n2025 Movies\nMovies since 2016\n\n\n\n\nThriller\n37%\n24%\n\n\nDrama\n34%\n42%\n\n\nComedy\n33%\n33%\n\n\nAction\n30%\n19%\n\n\nHorror\n18%\n16%\n\n\n\nFor 2025, the thriller genre has been the most common genre, with 37% of movies (totaling 139 movies) having this genre. Drama follows up behind it with 34% (totaling 125 movies). Both of these genres are often accompanies with each other and other genres. For example, most romance movies also have drama. Action and horror movies will often include thriller as well, and those genres are also in the top 5.\nLooking at all the movies in the last 10 years, it seems that drama was also a very popular genre, being at 42% (totaling 4202 movies), while action and thrillers weren’t as popular. This gives us some insights as to today’s culture where people have lower attention spans which may be a leading cause to action and thriller movies being more popular.\n\nGenres by Ranking\nBecause there were so many thriller and drama movies, I expected those genres to be the highest ranking movies. However, genres that weren’t even on the top 5 for amount of movies produced with that genre were ranked the highest. For 2025, the animation genre had the highest average ratings (7.28 avg rating). Since 2016, documentaries had the highest average rating (7.11 avg rating). The documentary rating really surprised me because in my personal life I’ve rarely watched documentaries and don’t know many people who enjoy watching documentaries. The ratings are a weighted average of votes on the movie, so it may be that only people who are interested in documentaries are voting on them, inflating that score.\n\n\nTime Series Plot\nIn order to look at how the highest rated genre at changed over time, I made a time series plot showing this. \n\n\nGenres by Popularity\nIn order to see if the ratings were inflated, I also looked at the popularity of different genres. Popularity is determined by the total number of page views on the site for each movie so it may not completely represent if people are enjoying the movie, but that many people are watching the movie. Popularity is usually skewed towards newer movies since most people only visit IMDb to read summaries, reviews, and post reviews for new movies. Because of this, I will only look at genre popularity for movies released in 2025. Looking at popularity, I got different results from what rankings show. The fantasy genre is the most popular (54.7 avg) while the documentary genre is the least popular (2.3). This reinforces my belief that the documentary genre most likely has the highest average rating because the majority of people who are voting for the ranking of documentaries enjoy watching them."
-  },
-  {
-    "objectID": "movie_blog.html#summary",
-    "href": "movie_blog.html#summary",
-    "title": "Movie Rankings by Genre",
-    "section": "Summary",
-    "text": "Summary\nFrom the analysis that I was able to do, I was able to find that the current most popular genres are most likely fantasy and animation. These genres have been producing high rated movies is the last couple of years. This can be due to the continual rise in digital imaging, allowing for better animation. This makes the movies easier to create and better to watch as well. Fantasy has been a popular genre, which is unsuprising considering the widespread popular movies since 2016 such as the Avengers movies. Just looking at highest rated movies on average wasn’t very helpful as it could be extremely skewed with low view counts but high ratings. The most useful was to compare ratings and popularity to see what genres the fans were enjoying. These were fantasy and animation. Looking at the proportion table and count of movies was useful to see what genres Hollywood wanted to focus on and wanted to produce. We saw that within the last 10 years, there has been an increase in the percentage of movies that are considered action and thrillers, showcasing today’s culture and interest in fast-paced movies."
-  },
-  {
-    "objectID": "movie_blog.html#additional-information",
-    "href": "movie_blog.html#additional-information",
-    "title": "Movie Rankings by Genre",
-    "section": "Additional Information",
-    "text": "Additional Information\n\nTMDb (The Movie Database) API Documentation – Learn how to access and use TMDb’s public movie data.\n\nTMDb Terms of Use – Review TMDb’s data usage policy and attribution requirements.\n\nPandas Documentation – For data cleaning, transformation, and aggregation in Python.\n\nMatplotlib Documentation – For creating and saving data visualizations.\n\nKaggle Movie Datasets – You can look here for datasets similar to this."
-  },
-  {
-    "objectID": "movie_blog.html#github-repository",
-    "href": "movie_blog.html#github-repository",
-    "title": "Movie Rankings by Genre",
-    "section": "GitHub Repository",
-    "text": "GitHub Repository\nYou can view my code for this on my Github"
   }
 ]

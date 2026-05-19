@@ -27,4 +27,8 @@ Here is a link to the google slides we made for a quick look at our findings.
 [Slides](https://docs.google.com/presentation/d/1tzXx27ziEVCkIKVPPFrrYlTtKYtOuI91d7MYrJ9xHPo/edit?slide=id.g3d3c87929d0_1_61#slide=id.g3d3c87929d0_1_61)
 ---
 
+###
+
+### Other Projects
+I also have a blog page where I wrote a basic report about the difference between seaborn and matplotlib libraries 
 *Thanks for visiting! Feel free to explore my projects and see what I'm learning.*
